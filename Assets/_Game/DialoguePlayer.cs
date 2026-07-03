@@ -1,6 +1,7 @@
 using Ink.Runtime;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace NAMESPACE
@@ -10,16 +11,18 @@ namespace NAMESPACE
         [SerializeField] TextAsset inkJSON = null;
         Story story;
         
-        [SerializeField] Canvas canvas = null;
+        [SerializeField] RectTransform uiParent = null;
+        [SerializeField] FadeController popUp = null;
 
         // UI Prefabs
-        [SerializeField] TextMeshProUGUI textPrefab = null;
-        [SerializeField] Button buttonPrefab = null;
+        [SerializeField] TextMeshProUGUI textUI = null;
+        [SerializeField] Button buttonUI = null;
+        TextMeshProUGUI storyText;  
         
         void Awake()
         {
             // Remove the default message
-            RemoveChildren();
+            ResetButton();
             StartStory();
         }
 
@@ -36,7 +39,7 @@ namespace NAMESPACE
         void RefreshView()
         {
             // Remove all the UI on screen
-            RemoveChildren();
+            ResetButton();
 
             // Read all the content until we can't continue any more
             while (story.canContinue)
@@ -62,9 +65,7 @@ namespace NAMESPACE
             }
             // If we've read all the content and there's no choices, the story is finished!
             else
-            {
-                
-            }
+                popUp.FadeOut();
         }
 
         void OnClickChoiceButton (Choice choice) {
@@ -72,20 +73,22 @@ namespace NAMESPACE
             RefreshView();
         }
         
-        // Creates a textbox showing the the line of text
+        // Creates a textbox showing the line of text
         void CreateContentView(string text)
         {
-            TextMeshProUGUI storyText = Instantiate(textPrefab) as TextMeshProUGUI;
+            TextMeshProUGUI storyText = textUI;
             storyText.text = text;
-            storyText.transform.SetParent(canvas.transform, false);
+            storyText.transform.SetParent(uiParent.transform, false);
+            popUp.FadeIn();
         }
 
         // Creates a button showing the choice text
         Button CreateChoiceView(string text)
         {
             // Creates the button from a prefab
-            Button choice = Instantiate(buttonPrefab) as Button;
-            choice.transform.SetParent(canvas.transform, false);
+            Button choice = buttonUI;
+            choice.transform.SetParent(uiParent.transform, false);
+            popUp.FadeIn();
 
             // Gets the text from the button prefab
             TextMeshProUGUI choiceText = choice.GetComponentInChildren<TextMeshProUGUI>();
@@ -99,13 +102,12 @@ namespace NAMESPACE
         }
 
         // Destroys all the children of this gameobject (all the UI)
-        void RemoveChildren()
+        void ResetButton()
         {
-            int childCount = canvas.transform.childCount;
-            for (int i = childCount - 1; i >= 0; --i)
-            {
-                Destroy(canvas.transform.GetChild(i).gameObject);
-            }
+            // int childCount = uiParent.transform.childCount;
+            // for (int i = childCount - 1; i >= 0; --i) 
+            //     Destroy(uiParent.transform.GetChild(i).gameObject);
+            buttonUI.onClick.RemoveAllListeners();
         }
     }
 }
