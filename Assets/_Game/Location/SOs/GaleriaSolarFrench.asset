@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: GaleriaSolarFrench
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 0300000004000000
+  locationName: "Galer\xEDa Solar de French"
+  description: "El cuerpo del frente de esta antigua construcci\xF3n que hoy alberga
+    locales data de comienzos del siglo XX.  En la planta alta es posible disfrutar
+    de un restaurante con una hermosa vista a Plaza Dorrego   El resto del edificio,
+    en los que se destacan elementos de la arquitectura neocolonial, fueron construidos
+    en la d\xE9cada de los a\xF1os 1930. En la entrada se exhibe un cuadro de may\xF3lica
+    que ilustra la participaci\xF3n de Domingo French y Antonio Luis Beruti durante
+    los acontecimientos que desembocaron en la Revoluci\xF3n de Mayo de 1810. Cuenta
+    la historia que estos dos patriotas repartieron las cintas celestes y blancas
+    que los independentistas llevaban en la solapa para diferenciarse de los realistas
+    en las puertas del Cabildo."

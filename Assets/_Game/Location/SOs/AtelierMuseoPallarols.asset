@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: AtelierMuseoPallarols
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 0300000000000000
+  locationName: Atelier y Museo Pallarols
+  description: "Juan Carlos Pallarols es un artista que se presenta socialmente de
+    un modo muy particular: dice que viene haciendo arte desde el a\xF1o 1750. \xBFC\xF3mo
+    podr\xEDa ser eso posible? No hay misterios ni pociones m\xE1gicas que lo hayan
+    mantenido en acci\xF3n durante casi tres siglos. Pero la frase cobra sentido
+    porque \xE9l se apoya en sus ancestros, una familia en la que sucesivas generaciones
+    pusieron sus manos al servicio de la orfebrer\xEDa. Los Pallarols son oriundos
+    de Catalu\xF1a, Espa\xF1a, y llegaron a la Argentina a principios del siglo XIX. 
+    Juan Carlos es la sexta generaci\xF3n en el oficio y cre\xF3 un museo en el que 
+    re\xFAne y comparte obras de sus antepasados, expresiones art\xEDsticas de colegas
+    y r\xE9plicas in\xE9ditas de las grandes obras realizadas durante toda su vida. 
+    En este edificio ubicado en la calle Defensa 1094, justo frente a la emblem\xE1tica
+    Plaza Dorrego, hay plater\xEDas, pinturas y esculturas. Aqu\xED tambi\xE9n est\xE1
+    el taller del artista, su refugio m\xE1s preciado. \xC9l lo describe as\xED:
+    \u201CEl color del fuego, las mesas de madera gastadas por el tiempo, las paredes
+    sosteniendo cada pedacito de la historia de este apellido que cobijo con el alma,
+    porque en \xE9l se guarda la historia de lucha de mis antepasados y con cada
+    uno de ellos la vida de sus generaciones, de sus pueblos\u201D.  Si bien no est\xE1
+    abierto al p\xFAblico, se pueden acordar visitas especiales. Tambi\xE9n pod\xE9s
+    visitar el local de Pallarols (en Defensa 1039) repleto de obras."

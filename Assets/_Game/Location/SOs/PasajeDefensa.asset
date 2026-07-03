@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: PasajeDefensa
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 0300000005000000
+  locationName: Pasaje Defensa
+  description: "Esta tradicional casona de dos plantas, construida en la d\xE9cada
+    de los a\xF1os 1880, fue residencia de los Ezeiza, una distinguida familia de
+    la Ciudad. La casa tiene habitaciones que convergen a una galer\xEDa lateral.
+    La planta baja presenta tres patios: el Patio del Tiempo, el Patio del \xC1rbol
+    y el Patio de los Ezeiza. La planta alta solo tiene un patio general. Durante
+    algunos a\xF1os funcion\xF3 aqu\xED una escuela para sordomudos. En 1981 se transform\xF3
+    en galer\xEDa comercial dedicada a la venta de antig\xFCedades, indumentaria,
+    cuadros, recuerdos, etc.  "

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: PlazaDorrego
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 05000000
+  locationName: Plaza Dorrego
+  description: "La Plaza Dorrego es considerada Monumento Hist\xF3rico Nacional ya
+    que en septiembre de 1816 fue el lugar en el que se reuni\xF3 al pueblo de Buenos
+    Aires para anunciarle la Independencia que hab\xEDa sido promulgada el 9 de julio
+    de 1816 en el Congreso de Tucum\xE1n.  Ubicada en pleno barrio de San Telmo,
+    muchos de los caserones del siglo XIX que se encuentran a su alrededor han sido
+    reciclados y transformados en caf\xE9s, negocios de antig\xFCedades (especialmente
+    en la calle Defensa) o restaurantes de categor\xEDa. Adem\xE1s, es un lugar donde
+    se congregan muchos artistas callejeros.   Esta es una de las pocas plazas porte\xF1as
+    totalmente pavimentada. "

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: PaseoHistorieta
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 05000000
+  locationName: Paseo de la Historieta
+  description: "El paseo se inicia en Defensa y Chile con Mafalda, Susanita y Manolito
+    (la mundialmente c\xE9lebre ni\xF1a y sus amigos, creados por Quino). Contin\xFAa
+    por Chile hasta Balcarce con Isidoro Ca\xF1ones (el prototipo del playboy argentino,
+    obra de Dante Quinterno). En Balcarce y M\xE9xico se encuentran Larguirucho y
+    Super Hijitus (personajes de Manuel Garc\xEDa Ferr\xE9). M\xE1s adelante, siguiendo
+    por Balcarce hacia la Avenida Belgrano se ubica Mat\xEDas (el ni\xF1o pregunt\xF3n
+    de Sendra). Siguiendo todav\xEDa por Balcarce est\xE1 Don Fulgencio (\u201CEl
+    hombre que no tuvo infancia\u201D, obra de Lino Palacio). Y sentado esperando
+    para alentar est\xE1 Clemente (el inclasificable personaje sin manos, fan\xE1tico
+    de f\xFAtbol, creado por Caloi). Por fin, llegando a la esquina de Balcarce y
+    av. Belgrano nos encontramos con las Chicas de Divito (que marcaron a varias
+    generaciones de argentinos). En av. Belgrano y Av. Paseo Col\xF3n est\xE1 apostado
+    Patoruz\xFA (el cacique tehuelche creado por Quinterno). Sobre av. Belgrano,
+    entre Av. Paseo Col\xF3n y Azopardo, est\xE1n Patoruzito e Isidorito. (tambi\xE9n
+    de Dante Quinterno) Siguiendo por av. Belgrano, tambi\xE9n nos encontramos con
+    Gaturro (la famosa mascota de Nik). Finalmente llegamos a Puerto Madero y nos
+    encontramos con el reconocido Don Nicola (de Hector Torino). Sobre Juana Manso,
+    a 100 mts., nos encontramos con Negraz\xF3n y Chaveta (de A. Cognigni). Siguiendo
+    el recorrido por la av. Marta Lynch, aparecen Di\xF3genes y el Linyera (de Tabar\xE9).
+    Todav\xEDa por av. Lynch, nos encontramos con Langostino y Corina (de Eduardo
+    Ferro). Infaltable en este recorrido, Inodoro Pereyra y su inseparable perro
+    Mendieta (creaci\xF3n de Roberto Fontanarrosa). Finalizando el recorrido hasta
+    llegar al Museo del Humor en Av. de los Italianos nos encontramos con La Jirafa
+    (creaci\xF3n de Mordillo). Mir\xE1 el mapa con todas los personajes: Recorrido
+    por el Paseo de la Historieta."

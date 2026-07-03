@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: IglesiaDinamarquesa
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 02000000
+  locationName: Iglesia Dinamarquesa
+  description: "La construcci\xF3n de esta iglesia fue financiada por la comunidad
+    de inmigrantes daneses de Buenos Aires, con aportes de la organizaci\xF3n Iglesia
+    Danesa en el Exterior. Como puede apreciarse en la torre y los techos, su estilo
+    es neog\xF3tico. Se inaugur\xF3 en 1931 y el proyecto original estuvo a cargo
+    de los arquitectos daneses R\xF6nnow y Bisgaard. La escalera del frente es una
+    alegor\xEDa del sue\xF1o de Jacob. El templo es de confesi\xF3n luterana y la
+    mayor\xEDa de los oficios religiosos se llevan a cabo en espa\xF1ol. En el lugar
+    tambi\xE9n se realizan actividades culturales."

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: ElViejoAlmacen
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 0300000001000000
+  locationName: "El Viejo Almac\xE9n"
+  description: "En pleno barrio de San Telmo, m\xE1s precisamente en la esquina de
+    av. Independencia  y Balcarce, se encuentra El Viejo Almac\xE9n.   Lo que fuera
+    un antiguo almac\xE9n de campa\xF1a es hoy un restaurante de cocina internacional
+    a la carta, con una extensa selecci\xF3n de vinos y un excelente show de tango. 
+    La historia de este sitio arrabalero se remonta a la \xE9poca del Virreinato
+    del R\xEDo de la Plata: fue construido en 1769. En 1969, el famoso cantante de
+    tangos Edmundo Rivero lo compr\xF3 para transformarlo en uno de los locales tangueros
+    m\xE1s importantes de la ciudad. En a\xF1o 1982 el Honorable Concejo Deliberante
+    de la Ciudad de Buenos Aires lo declar\xF3 Sitio de Inter\xE9s Cultural"

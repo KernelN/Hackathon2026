@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: ParqueLezama
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 0300000000000000
+  locationName: Parque Lezama
+  description: "El Parque Lezama es uno de los muchos paseos tradicionales de la
+    Ciudad de Buenos Aires, ubicado en el barrio de San Telmo, y sede del Museo Hist\xF3rico
+    Nacional. Algunos historiadores creen que en este lugar fue realizada la primera
+    fundaci\xF3n de la ciudad por Pedro de Mendoza en 1536, abandonada un a\xF1o
+    despu\xE9s por la hambruna, las enfermedades y la hostilidad de las tribus querand\xEDes. 
+    El terreno perteneci\xF3 a distintos propietarios hasta que, en 1857, fue comprado
+    por el hacendado salte\xF1o Gregorio Lezama, quien import\xF3 \xE1rboles y plantas
+    ex\xF3ticas y contrat\xF3 a paisajistas europeos para que dise\xF1aran uno de
+    los jardines privados m\xE1s lujosos de la \xE9poca. Su viuda, \xC1ngela \xC1lzaga,
+    vendi\xF3 los terrenos a la comuna en 1894 con la condici\xF3n de que se convirtieran
+    en un paseo p\xFAblico con el nombre de su marido.  El parque tiene varias esculturas,
+    monumentos (entre los que se destaca el de Pedro de Mendoza, primer fundador
+    de la Ciudad de Buenos Aires), un anfiteatro, un mirador y una fuente. En sus
+    alrededores se encuentra, sobre la calle Defensa, el Museo Hist\xF3rico Nacional,
+    que fue la casona que habit\xF3 Lezama en el siglo XIX; frente al parque se levanta
+    la Iglesia Ortodoxa Rusa (Brasil 315), reconocible por su estilo moscovita y
+    sus c\xFApulas azules, obra del arquitecto Alejandro Christophersen. En la esquina
+    de Brasil y Defensa se encuentran dos bares notables de la ciudad: El Brit\xE1nico
+    y El Hipop\xF3tamo. "

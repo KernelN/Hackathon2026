@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: PasajeSanLorenzo
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 03000000
+  locationName: Pasaje San Lorenzo
+  description: "La mayor\xEDa de las construcciones que flanquean esta cortada de
+    dos cuadras de extensi\xF3n datan de la segunda mitad del siglo XIX y los primeros
+    a\xF1os del XX. En el pasaje puede visitarse la galer\xEDa Los Patios de San
+    Telmo, una t\xEDpica casona del siglo XVIII que alberga talleres de artistas
+    y artesanos."

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: MuseoModerno
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 00000000
+  locationName: Museo Moderno
+  description: "En el coraz\xF3n del Casco Hist\xF3rico, en pleno barrio de San Telmo,
+    el Museo Moderno pone a tu disposici\xF3n una rica colecci\xF3n del arte argentino
+    de los \xFAltimos a\xF1os.  La propuesta del Moderno es acercarte a las artes
+    visuales a trav\xE9s de sus 11.000 m2 y sus m\xE1s de 7.000 obras.  A su vez,
+    el edificio es un fiel exponente de las construcciones inglesas de la era industrial
+    del siglo XIX, con su estructura de hierro, grandes aberturas y su fachada de
+    ladrillo a la vista. Antiguamente funcion\xF3 como un dep\xF3sito de la empresa
+    tabacalera Nobleza Piccardo.  La experiencia se complementa con el bar, que ofrece
+    un excelente caf\xE9 de especialidad y un men\xFA dise\xF1ado especialmente.
+    No te olvides de visitar la tienda donde encontrar\xE1s todos los libros editados
+    por el Moderno, una oportunidad para sumergirte en el universo de los artistas
+    a trav\xE9s de estas publicaciones."

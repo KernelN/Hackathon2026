@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: MercadoSanTelmo
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 0500000004000000
+  locationName: Mercado San Telmo
+  description: "\xBFTe gustan las antig\xFCedades, los retratos familiares en blanco
+    y negro, o los juguetes del siglo pasado? \xBFQuer\xE9s probar shawarma de Medio
+    Oriente, empanadas salte\xF1as, una buena raclette, el mejor chorip\xE1n o tomar
+    un cafecito con granos tra\xEDdos de alg\xFAn pa\xEDs ex\xF3tico? \xBFTen\xE9s
+    ganas de ir a buscar algunas especias dif\xEDciles de conseguir, un malbec mendocino
+    o llevarte un pat\xE9 patag\xF3nico? Muy bien, es posible que hagas todo eso
+    (\xA1y mucho m\xE1s!) yendo a un solo lugar: el Mercado de San Telmo te espera
+    con sus puertas abiertas."

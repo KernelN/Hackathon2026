@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: CasaEstebanLuca
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 0300000000000000
+  locationName: Casa de Esteban de Luca
+  description: "En esta casona de fines del siglo XVIII vivi\xF3 Esteban de Luca,
+    militar, poeta, periodista y autor de la \"Marcha Patri\xF3tica\", primera canci\xF3n
+    nacional compuesta en el a\xF1o 1810. Adem\xE1s, se destac\xF3 en la lucha contra
+    las fuerzas inglesas que invadieron la ciudad en 1806 y 1807. La casa fue restaurada
+    y conserva elementos arquitect\xF3nicos de la \xE9poca. Hoy es Monumento Hist\xF3rico
+    Nacional."

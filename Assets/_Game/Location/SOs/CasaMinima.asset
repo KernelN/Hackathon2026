@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: CasaMinima
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 03000000
+  locationName: "Casa M\xEDnima"
+  description: "Con apenas 2,50 metros de frente, a esta casa, que fue parte de una
+    vivienda de la segunda d\xE9cada del siglo XIX, se la conoce como la m\xE1s angosta
+    de la Ciudad. Presenta una fachada sencilla, compuesta por una puerta de dos
+    hojas con cuarterones pintados de verde y, en la planta alta, un peque\xF1o balc\xF3n
+    con barrotes de hierro. Estas casas eran para los esclavos libertos, a quienes
+    sus amos les asignaban un peque\xF1o espacio para levantar sus viviendas, contiguo
+    a su propiedad. La casa del Pasaje San Lorenzo --la \xFAnica de este tipo que
+    queda en Buenos Aires-- mide 2,50 metros de ancho y 13 de profundidad. La construcci\xF3n
+    es de la segunda d\xE9cada del siglo XIX y se trata de un espacio residual que
+    qued\xF3 luego de las sucesivas reformas de edificaci\xF3n que sufri\xF3 la manzana. 
+    La casa m\xEDnima es tambi\xE9n conocida por el mito que rond\xF3 en torno de
+    ella. Se cre\xEDa que all\xED hab\xEDa residido un esclavo liberto, a quien su
+    amo le habr\xEDa donado el terreno para que edifique su hogar. De ah\xED que
+    por mucho tiempo se la llam\xF3 entre los porte\xF1os Casa del esclavo liberto."

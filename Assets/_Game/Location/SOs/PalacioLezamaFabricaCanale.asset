@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: PalacioLezamaFabricaCanale
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 03000000
+  locationName: "Palacio Lezama - F\xE1brica Canale"
+  description: "En este edificio, conocido en la actualidad como Palacio Lezama,
+    funcion\xF3 la f\xE1brica de los tradicionales \"Bizcochos Canale\u201D. En 1875
+    don Jos\xE9 Canale, inmigrante genov\xE9s, abri\xF3 una peque\xF1a panader\xEDa
+    en Defensa y Cochabamba. Con los a\xF1os su emprendimiento creci\xF3 y se traslad\xF3
+    a esta ubicaci\xF3n, frente al Parque Lezama. Aqu\xED sigui\xF3 prosperando,
+    acompa\xF1ando el progreso industrial del pa\xEDs, y se convirti\xF3 en una de
+    las grandes f\xE1bricas del sur de la ciudad.  En los \xFAltimos a\xF1os el recinto
+    se utiliz\xF3 para la realizaci\xF3n de eventos importantes y exposiciones de
+    arquitectura.   El edificio se ubica sobre la Avenida Mart\xEDn Garc\xEDa, entre
+    Irala y Av. Regimiento de los Patricios, ocupa una superficie aproximada de 30.000
+    m\xB2, distribuidos en planta baja y 6 pisos.  Actualmente, dentro del edifio,
+    funcionan el Ministerio de Modernizaci\xF3n, Ministerio de Espacio y Ambiente
+    P\xFAblico, Ministerio de Desarrollo Urbano y Sindicatura General del Gobierno
+    de la Ciudad de Buenos Aires."

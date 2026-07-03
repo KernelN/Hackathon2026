@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: MuseoHistoricoNacional
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 00000000
+  locationName: "Museo Hist\xF3rico Nacional"
+  description: "El Museo propone un recorrido por las culturas de los pueblos originarios,
+    la \xE9poca de la conquista y el establecimiento del orden colonial, la Revoluci\xF3n
+    de Mayo, la sociedad porte\xF1a en 1810 y el cruce de los Andes, entre otros
+    episodios destacados de la historia argentina.  As\xED, por ejemplo, se exhibe
+    la hist\xF3rica bandera que en 1812 acompa\xF1\xF3 a Manuel Belgrano en las batallas
+    del Alto Per\xFA y que muchos a\xF1os despu\xE9s fue encontrada detr\xE1s de
+    un cuadro en una parroquia de Macha, Bolivia. Hab\xEDa sido escondida por el
+    ej\xE9rcito de Belgrano para preservarla de los enemigos -junto a otra blanca
+    con una franja celeste denominada Bandera de Sucre- y fue encontrada por un p\xE1rroco
+    mientras limpiaba su capilla. En 1896, el gobierno boliviano cedi\xF3 la Bandera
+    de Macha al Museo Hist\xF3rico Nacional argentino, donde se exhibe desde entonces. 
+    Otra de las piezas de enorme valor hist\xF3rico que expone el Museo es el piano
+    de Mariquita S\xE1nchez de Thompson que ejecut\xF3 por primera vez una composici\xF3n
+    hist\xF3rica que dio vida al Himno Nacional Argentino. Tambi\xE9n cuenta con
+    el sable corvo de Jos\xE9 de San Mart\xEDn, considerado un s\xEDmbolo de la emancipaci\xF3n
+    sudamericana ya que acompa\xF1\xF3 al Libertador en las luchas por la independencia.
+    Entre las colecciones de pintura, se destacan los \xF3leos del pintor C\xE1ndido
+    L\xF3pez, que tienen un gran valor art\xEDstico y testimonial porque registran
+    las batallas de la Guerra de la Triple Alianza de la que el artista tambi\xE9n
+    particip\xF3 como soldado.  El acervo se completa con diversos documentos, pinturas
+    y objetos hist\xF3ricos entre los que se destacan una cigarrera que perteneci\xF3
+    a Mariano Moreno, un escudo nacional pintado sobre hierro, que estaba en el portal
+    de la Asamblea del A\xF1o XIII, entre otros."

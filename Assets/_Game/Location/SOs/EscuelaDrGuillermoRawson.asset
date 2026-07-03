@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: EscuelaDrGuillermoRawson
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 0300000006000000
+  locationName: Escuela Dr. Guillermo Rawson
+  description: "Este solar fue ocupado por la orden de los betlemitas durante el
+    siglo XVIII. De esa \xE9poca datan los ejemplares de magnolia que flanquean su
+    entrada. En los tiempos del Virreinato del R\xEDo de la Plata se constituy\xF3
+    aqu\xED el Protomedicato, instituci\xF3n que regulaba la pr\xE1ctica de la Medicina.
+    Luego, entre 1858 y 1887, funcion\xF3 aqu\xED la primera escuela de Medicina
+    de Buenos Aires. Su arquitectura presenta elementos del estilo neocolonial."

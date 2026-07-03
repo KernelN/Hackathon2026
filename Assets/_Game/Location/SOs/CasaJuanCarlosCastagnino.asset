@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: CasaJuanCarlosCastagnino
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 03000000
+  locationName: Casa de Juan Carlos Castagnino
+  description: "Aqu\xED, en esta casa de fines del siglo XVIII, vivi\xF3 el pintor
+    y dibujante marplatense Juan Carlos Castagnino (1908-1972) en la d\xE9cada de
+    los a\xF1os 1960. Castagnino es uno de los pintores contempor\xE1neos m\xE1s
+    importantes de la Argentina. Estudi\xF3 en la Escuela Superior de Bellas Artes
+    Ernesto de la C\xE1rcova y, en forma particular, en los talleres de dos notables
+    artistas locales: Lino E. Spilimbergo y Miguel Carlos Victorica. M\xE1s adelante
+    complet\xF3 su formaci\xF3n en Europa. Ampliamente difundidas son las ilustraciones
+    que realiz\xF3 en 1962, a pedido de la editorial universitaria Eudeba, para una
+    edici\xF3n especial del Mart\xEDn Fierro de Jos\xE9 Hern\xE1ndez, una de las
+    mayores obras de la literatura gauchesca argentina."

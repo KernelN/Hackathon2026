@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
+  m_Name: AntiguoEdificioFundacionSanTelmo
+  m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
+  locationTags: 03000000
+  locationName: "Antiguo Edificio de la Fundaci\xF3n San Telmo"
+  description: "Esta casona se construy\xF3 hacia el a\xF1o 1860 y posteriormente
+    fue refaccionada en la d\xE9cada de los a\xF1os 1980 por el arquitecto Osvaldo
+    Giesso. Su fachada es la r\xE9plica de una casa del siglo XVIII. Desde 1980,
+    y durante m\xE1s de una d\xE9cada, fue sede de la Fundaci\xF3n San Telmo, instituci\xF3n
+    dedicada a organizar actividades culturales relacionadas con la literatura argentina.
+    En la actualidad funcionan en la casa una galer\xEDa de arte y una escuela de
+    teatro."
