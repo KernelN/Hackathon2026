@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: ParqueLezama
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  locationTags: 0300000000000000
+  locationTags: 05000000
   locationName: Parque Lezama
   description: "El Parque Lezama es uno de los muchos paseos tradicionales de la
     Ciudad de Buenos Aires, ubicado en el barrio de San Telmo, y sede del Museo Hist\xF3rico

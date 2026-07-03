@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-namespace NAMESPACE
+namespace Hackathon
 {
     public class DialoguePlayer : MonoBehaviour
     {
@@ -12,7 +12,7 @@ namespace NAMESPACE
         Story story;
         
         [SerializeField] RectTransform uiParent = null;
-        [SerializeField] FadeController popUp = null;
+        [SerializeField] Universal.FadeController popUp = null;
 
         // UI Prefabs
         [SerializeField] TextMeshProUGUI textUI = null;

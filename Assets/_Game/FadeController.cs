@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace NAMESPACE
+namespace Universal
 {
     public class FadeController : MonoBehaviour
     {
