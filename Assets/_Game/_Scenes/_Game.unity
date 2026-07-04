@@ -1153,7 +1153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 86.3685, y: -47.067}
+  m_AnchoredPosition: {x: 248.7, y: -396.81}
   m_SizeDelta: {x: 172.7369, y: 94.1341}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &125304044
@@ -6983,7 +6983,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.96644175, y: 0.9406933}
   m_AnchoredPosition: {x: 7.808716, y: 10.761627}
-  m_SizeDelta: {x: -15.617505, y: -21.523249}
+  m_SizeDelta: {x: -15.6175, y: -21.523}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &596696811
 MonoBehaviour:
@@ -7112,8 +7112,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 168.17148, y: -94.20245}
-  m_SizeDelta: {x: -336.3466, y: -188.405}
+  m_AnchoredPosition: {x: 168.17148, y: 0.000015258789}
+  m_SizeDelta: {x: -336.3466, y: -0.000030518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &664109219
 MonoBehaviour:
@@ -10182,7 +10182,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -306.5, y: 60}
+  m_AnchoredPosition: {x: -357.44, y: -201.21}
   m_SizeDelta: {x: 65.12811, y: 35.491898}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1065603959
@@ -13932,8 +13932,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.96644175, y: 0.9406933}
-  m_AnchoredPosition: {x: 7.808716, y: 10.761627}
-  m_SizeDelta: {x: -15.617505, y: -21.523249}
+  m_AnchoredPosition: {x: 7.8457, y: 24.037}
+  m_SizeDelta: {x: -15.692, y: -48.074}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1237112558
 MonoBehaviour:
@@ -18669,7 +18669,7 @@ GameObject:
   - component: {fileID: 1711155275}
   - component: {fileID: 1711155274}
   m_Layer: 5
-  m_Name: PC
+  m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18682,17 +18682,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711155272}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.70709485, w: -0.70711875}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 374656959}
   m_Father: {fileID: 664109218}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.998}
   m_AnchorMin: {x: 0.03384322, y: 0.08217411}
   m_AnchorMax: {x: 0.7444704, y: 0.9406933}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.07406616, y: 0.0001373291}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1711155274
@@ -19708,8 +19708,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 277.1, y: 106.075165}
-  m_SizeDelta: {x: 426.1768, y: 146.1756}
+  m_AnchoredPosition: {x: 0.00000071526, y: 127.6}
+  m_SizeDelta: {x: 251.5039, y: 86.264}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1795660931
 MonoBehaviour:
@@ -22751,8 +22751,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 82.3}
-  m_SizeDelta: {x: 166.7, y: 169.614}
+  m_AnchoredPosition: {x: 9.5, y: 100.08}
+  m_SizeDelta: {x: 199.2347, y: 205.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1983642912
 MonoBehaviour:
@@ -24598,10 +24598,10 @@ RectTransform:
   - {fileID: 1140029834}
   m_Father: {fileID: 1795660930}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.19820547}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.009346444, y: 0.19820547}
+  m_AnchorMax: {x: 1, y: 0.9726357}
+  m_AnchoredPosition: {x: -2, y: 2}
+  m_SizeDelta: {x: 4, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7562909690974535638
 CanvasRenderer:
