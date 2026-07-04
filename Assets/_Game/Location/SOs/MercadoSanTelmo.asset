@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: MercadoSanTelmo
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  sprite: {fileID: 21300000, guid: a90f0dc088609ce46a4b30c883a14b6a, type: 3}
+  sprite: {fileID: 21300000, guid: f03143e81cac4fd49815f6e9f68b467f, type: 3}
   tags: 0500000004000000
   locationName: Mercado San Telmo
   description: "\xBFTe gustan las antig\xFCedades, los retratos familiares en blanco

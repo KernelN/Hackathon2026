@@ -71,13 +71,13 @@ namespace Hackathon.Game
         {
             inactiveEntries.Remove(entry);
             activeEntries.Add(entry);
-            entry.gameObject.SetActive(true);
+            entry.Appear();
         }
         void DestroyTourEntry(TourEntryUI entry)
         {
             inactiveEntries.Add(entry);
             activeEntries.Remove(entry);
-            entry.gameObject.SetActive(false);
+            entry.Disappear();
             entry.transform.SetAsLastSibling(); //This keeps the active index working
         }
         

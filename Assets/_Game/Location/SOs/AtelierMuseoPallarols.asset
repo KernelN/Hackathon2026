@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: AtelierMuseoPallarols
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  sprite: {fileID: 21300000, guid: 89a9bd7e96cb3da4ba6638c3477e4abb, type: 3}
+  sprite: {fileID: 21300000, guid: 20addee9056d2dc41b0fb69c2baa4758, type: 3}
   tags: 0300000000000000
   locationName: Atelier y Museo Pallarols
   description: "Juan Carlos Pallarols es un artista que se presenta socialmente de

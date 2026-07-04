@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: ParqueLezama
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  sprite: {fileID: 21300000, guid: 4fe9e8d20e2284142a5ea4b4fea19acd, type: 3}
+  sprite: {fileID: 21300000, guid: 65856a9d32c355b40ae410bd4016f3b5, type: 3}
   tags: 05000000
   locationName: Parque Lezama
   description: "El Parque Lezama es uno de los muchos paseos tradicionales de la

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: PlazaDorrego
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  sprite: {fileID: 21300000, guid: 32432fba9dc41a849ad8a17ab100915e, type: 3}
+  sprite: {fileID: 21300000, guid: f356aed119ab8234ca0a712ee688c308, type: 3}
   tags: 05000000
   locationName: Plaza Dorrego
   description: "La Plaza Dorrego es considerada Monumento Hist\xF3rico Nacional ya

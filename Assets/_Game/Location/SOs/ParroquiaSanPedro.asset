@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: ParroquiaSanPedro
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  sprite: {fileID: 21300000, guid: 7cec2ae33fddabb4ea9b68da3fe985f0, type: 3}
+  sprite: {fileID: 21300000, guid: ed7e554f3e1aaa44f9e2b3cbc33b20bf, type: 3}
   tags: 02000000
   locationName: "Parroquia San Pedro Gonz\xE1lez Telmo"
   description: "La iglesia Nuestra Se\xF1ora de Bel\xE9n fue declarada Monumento

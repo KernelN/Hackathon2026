@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: FacultadIngenieriaSedePaseoColon
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  sprite: {fileID: 21300000, guid: f1e9728660581424e8453aacc8c069f1, type: 3}
+  sprite: {fileID: 21300000, guid: b967fc080cbe2e048bec38e682ac43e2, type: 3}
   tags: 06000000
   locationName: "Facultad de Ingenier\xEDa, sede Paseo Col\xF3n"
   description: "Este edificio, de mediados del siglo XX, fue construido para la Fundaci\xF3n

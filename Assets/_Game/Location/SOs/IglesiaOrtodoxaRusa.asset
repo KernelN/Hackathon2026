@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: IglesiaOrtodoxaRusa
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  sprite: {fileID: 21300000, guid: 3f87480d162d494429843a707b5fd564, type: 3}
+  sprite: {fileID: 21300000, guid: 21aceda1b9b318f4faa21247b08ffda4, type: 3}
   tags: 0300000002000000
   locationName: "Iglesia Ortodoxa Rusa de la Sant\xEDsima Trinidad"
   description: "Esta iglesia, en estilo moscovita del siglo XVII, fue inaugurada

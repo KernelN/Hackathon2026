@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: PasajeSanLorenzo
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  sprite: {fileID: 21300000, guid: b8412fde055f1a840836dbef72fd245b, type: 3}
+  sprite: {fileID: 21300000, guid: 52ab4b746ed10254a9c17cf7bea09a51, type: 3}
   tags: 03000000
   locationName: Pasaje San Lorenzo
   description: "La mayor\xEDa de las construcciones que flanquean esta cortada de
