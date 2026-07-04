@@ -1,14 +1,14 @@
 using Ink.Runtime;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace Hackathon
 {
     public class DialoguePlayer : MonoBehaviour
     {
-        [SerializeField] TextAsset inkJSON = null;
+        TextAsset inkJSON = null;
         Story story;
         
         [SerializeField] RectTransform uiParent = null;
@@ -19,8 +19,14 @@ namespace Hackathon
         [SerializeField] Button buttonUI = null;
         TextMeshProUGUI storyText;  
         
-        void Awake()
+        public UnityEvent OnDialogueEnded;
+
+        public void StartDialogue(TextAsset dialogue)
         {
+            if(!dialogue) return;
+            
+            inkJSON = dialogue;
+            
             // Remove the default message
             ResetButton();
             StartStory();
@@ -64,8 +70,7 @@ namespace Hackathon
                 }
             }
             // If we've read all the content and there's no choices, the story is finished!
-            else
-                popUp.FadeOut();
+            else OnDialogueEnded?.Invoke();
         }
 
         void OnClickChoiceButton (Choice choice) {

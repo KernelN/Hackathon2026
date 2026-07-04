@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Universal;
 
 namespace Hackathon.Game
@@ -8,13 +9,15 @@ namespace Hackathon.Game
     public class TourManager : Singleton<TourManager>
     {
         [SerializeField] Location[] locations;
-        [SerializeField] Tour currentTour;
+        Tour currentTour;
         
         [Header("UI")]
         [SerializeField] TourEntryUI[] uiEntries;
         List<TourEntryUI> activeEntries = new List<TourEntryUI>();
         List<TourEntryUI> inactiveEntries = new List<TourEntryUI>();
-        
+
+        public UnityEvent<Tour> TourClosed;
+
         void Start()
         {
             for (var i = 0; i < locations.Length; i++) 
@@ -28,7 +31,15 @@ namespace Hackathon.Game
             }
             
             inactiveEntries.AddRange(uiEntries);
+            
+            StartTourPlanning();
         }
+        public void StartTourPlanning()
+        {
+            Debug.Log("Starting Tour Planning");
+            currentTour = new Tour();
+        }
+
         public void MoveLocationIndex(int index, int newIndex)
         {
             currentTour.MoveLocationIndex(index, newIndex);
@@ -66,7 +77,6 @@ namespace Hackathon.Game
                 CreateTourEntry(inactiveEntries[0]);
             }
         }
-
         void CreateTourEntry(TourEntryUI entry)
         {
             inactiveEntries.Remove(entry);
@@ -79,6 +89,12 @@ namespace Hackathon.Game
             activeEntries.Remove(entry);
             entry.Disappear();
             entry.transform.SetAsLastSibling(); //This keeps the active index working
+        }
+        public void CompleteTour()
+        {
+            TourClosed?.Invoke(currentTour);
+            currentTour = null;
+            while (activeEntries.Count > 0) DestroyTourEntry(activeEntries[0]);
         }
         
 #if UNITY_EDITOR

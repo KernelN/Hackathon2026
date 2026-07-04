@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5cc33a013dca9e443a3b095dee07ef86
+guid: f492519bfe6682b44b54966c8c6fc0dd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3073252752945888365
-    second: dialogueBubbl_0
+      213: -7895518508070179219
+    second: Per03_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,9 +46,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dialogueBubbl_0
+      name: Per03_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 16
         y: 0
-        width: 2000
-        height: 1507
+        width: 473
+        height: 413
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d6cb454981366aa20800000000000000
-      internalID: 3073252752945888365
+      spriteID: d6e64f8cfbb7d6290800000000000000
+      internalID: -7895518508070179219
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6d9008dc10147d1498fb1fe1edcc1184
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dialogueBubbl_0: 3073252752945888365
+      Per03_0: -7895518508070179219
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

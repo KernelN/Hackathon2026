@@ -8,9 +8,14 @@ namespace Hackathon.Game
     {
         [SerializeField] Location[] locations;
         Dictionary<LocationSO.Tag, List<Location>> locationsByTag;
+        [SerializeField] Universal.FadeController mapBlockFader;
 
-        void Awake()
+        new void Awake()
         {
+            base.Awake();
+            
+            if(inst != this) return;
+            
             locationsByTag = new Dictionary<LocationSO.Tag, List<Location>>();
 
             //Fill dictionary with lists of locations ordered by TAG
@@ -20,6 +25,11 @@ namespace Hackathon.Game
                         locList.Add(loc);
                     else 
                         locationsByTag.Add(loc.Tags[j], new List<Location> { loc });
+        }
+        public void EnableMap(bool enable)
+        {
+            if(enable) mapBlockFader.FadeOut();
+            else mapBlockFader.FadeIn();
         }
         public List<Location> GetLocationsByTag(LocationSO.Tag tag, Location source = null)
         {
@@ -31,7 +41,6 @@ namespace Hackathon.Game
             
             return locationsByCloseness;
         }
-
         List<Location> GetLocationsByCloseness(List<Location> locList, Location source)
         {
             List<Location> result = new List<Location>(locList);

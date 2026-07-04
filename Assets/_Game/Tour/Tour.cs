@@ -6,10 +6,17 @@ namespace Hackathon.Game
     [System.Serializable]
     public class Tour
     {
-        [SerializeField] internal List<Location> locations;
-        List<float> distances = new List<float>();
+        internal List<Location> locations;
+        List<float> distances;
 
+        public Tour()
+        {
+            locations = new List<Location>();
+            distances = new List<float>();
+        }
         
+        public List<float> Distances => distances;
+
         public bool ContainsLocation(Location location)
             => locations.Contains(location);
         public void RemoveLocation(int index, bool updateData = true)

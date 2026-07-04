@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Universal
 {
@@ -11,6 +12,12 @@ namespace Universal
         [SerializeField] CanvasGroup canvasGroup;
         Coroutine cTask;
         bool isOn;
+
+        /// <summary>
+        /// Returns when it completed a fade.
+        /// true if fades in | false if fade out
+        /// </summary>
+        public UnityEvent<bool> completedFade;
 
         void Awake()
         {
@@ -28,13 +35,12 @@ namespace Universal
             if (cTask != null) StopCoroutine(cTask);
             cTask = StartCoroutine(FadeTask(false, fadeInTime));
         }
-
         public void FadeOut()
         {
             if(!isOn) return;
             
             if (cTask != null) StopCoroutine(cTask);
-            cTask = StartCoroutine(FadeTask(true, fadeInTime));
+            cTask = StartCoroutine(FadeTask(true, fadeOutTime));
         }
 
         IEnumerator FadeTask(bool fadeOut, float time, bool useTimeScale = true)
@@ -52,6 +58,7 @@ namespace Universal
             } while (timer < time);
 
             isOn = !fadeOut;
+            completedFade?.Invoke(isOn);
             if(!isOn) gameObject.SetActive(false);
             
             cTask = null;
