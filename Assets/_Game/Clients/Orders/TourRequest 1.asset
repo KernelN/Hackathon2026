@@ -12,23 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeb5b02fcfe92be479cbb7da96dfc09e, type: 3}
   m_Name: TourRequest 1
   m_EditorClassIdentifier: Assembly-CSharp::Hackathon.Game.Clients.TourRequestSO
-  clientSprite: {fileID: 21300000, guid: 034d8e031ef83a347bc6dceac08dabc8, type: 3}
-  inkIntro: {fileID: 4900000, guid: 0685d0d8df626c046819443e4c7fc501, type: 3}
-  inkOutro: {fileID: 0}
-  inkCancel: {fileID: 0}
-  clientName: Robert
-  goodReviewDesc: "Excelente servicio, disfrute mucho del recorrido. El Bar fue incre\xEDble,
-    mi estomago de verdad lo necesitaba"
-  goodReviewImg: {fileID: 21300000, guid: f1f4a799a642be44eb0a65dd1e074a28, type: 3}
-  badReviewDesc: "Buena atenci\xF3n, aunque quiza no se entendi\xF3 bien a d\xF3nde
-    quer\xEDa ir"
-  badReviewImg: {fileID: 21300000, guid: 43c14af108e32c0419717ca5357cc15c, type: 3}
   locationRequests:
   - location: {fileID: 0}
     locationTag: 0
     minDistance: 0
     maxDistance: 0
-  - location: {fileID: 11400000, guid: 3211755c65d44a748967b03e0d8bbbb1, type: 2}
-    locationTag: 0
+  - location: {fileID: 0}
+    locationTag: 1
     minDistance: 0
     maxDistance: 70
+  clientSprite: {fileID: 21300000, guid: 034d8e031ef83a347bc6dceac08dabc8, type: 3}
+  inkIntro: {fileID: 4900000, guid: 0685d0d8df626c046819443e4c7fc501, type: 3}
+  inkOutro: {fileID: 0}
+  inkCancel: {fileID: 0}
+  clientName: Robert
+  badReviewDesc: "Buena atenci\xF3n, aunque quiza no se entendi\xF3 bien a d\xF3nde
+    quer\xEDa ir"
+  badReviewImg: {fileID: 21300000, guid: 43c14af108e32c0419717ca5357cc15c, type: 3}
+  goodReviewDesc: "Excelente servicio, disfrute mucho del recorrido. El Bar fue incre\xEDble,
+    mi estomago de verdad lo necesitaba"
+  goodReviewImg: {fileID: 21300000, guid: f1f4a799a642be44eb0a65dd1e074a28, type: 3}
