@@ -54,9 +54,9 @@ namespace Hackathon.Game
         public void Appear(LocationSO location = null)
         {
             if(location) SetInfo(location);
-            fadeController.FadeIn();
+            fadeController.FadeIn(true);
         }
 
-        public void Disappear() => fadeController.FadeOut();
+        public void Disappear() => fadeController.FadeOut(true);
     }
 }
