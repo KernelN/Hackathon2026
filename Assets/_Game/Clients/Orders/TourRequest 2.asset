@@ -26,9 +26,8 @@ MonoBehaviour:
   inkOutro: {fileID: 0}
   inkCancel: {fileID: 0}
   clientName: Milagros
-  badReviewDesc: "El aspecto del lugar estan malo como lo deficiente de sus empleados
-    \U0001F624 "
+  badReviewDesc: El aspecto del lugar estan malo como lo deficiente de sus empleados
   badReviewImg: {fileID: 21300000, guid: 732134ab44fbe5442b0779a4b5f9c719, type: 3}
-  goodReviewDesc: "\xA1Un amor! \u2764\uFE0F Quiza no sea muy atractivo el lugar
-    pero cr\xE9anme que su servicio al cliente lo vale totalmente "
+  goodReviewDesc: "\xA1Un amor! Quiza no sea muy atractivo el lugar pero cr\xE9anme
+    que su servicio al cliente lo vale totalmente "
   goodReviewImg: {fileID: 21300000, guid: 8a222ae64ff810849a59eada13f81a03, type: 3}

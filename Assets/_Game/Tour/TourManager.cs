@@ -36,10 +36,20 @@ namespace Hackathon.Game
         }
         public void StartTourPlanning()
         {
+            if(currentTour != null) CloseTour();
             Debug.Log("Starting Tour Planning");
             currentTour = new Tour();
         }
-
+        public void CloseTour()
+        {
+            currentTour = null;
+            while (activeEntries.Count > 0) DestroyTourEntry(activeEntries[0]);
+        }
+        public void CompleteTour()
+        {
+            TourClosed?.Invoke(currentTour);
+            CloseTour();
+        }
         public void MoveLocationIndex(int index, int newIndex)
         {
             currentTour.MoveLocationIndex(index, newIndex);
@@ -89,12 +99,6 @@ namespace Hackathon.Game
             activeEntries.Remove(entry);
             entry.Disappear();
             entry.transform.SetAsLastSibling(); //This keeps the active index working
-        }
-        public void CompleteTour()
-        {
-            TourClosed?.Invoke(currentTour);
-            currentTour = null;
-            while (activeEntries.Count > 0) DestroyTourEntry(activeEntries[0]);
         }
         
 #if UNITY_EDITOR
