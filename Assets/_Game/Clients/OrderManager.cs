@@ -16,13 +16,19 @@ namespace Hackathon.Game.Clients
         
         [Header("Orders")]
         [SerializeField] TourRequestSO[] requests;
-        [SerializeField] TMPro.TextMeshProUGUI completionRateText;
         [SerializeField] ClientController client;
         [SerializeField] float timeBetweenClients = 1;
         OrderStage currentStage;
-        float completionRate = 0;
         int ordersCompleted = 0;
         int ordersSucceded = 0;
+
+        [Header("Order Feedback")]
+        [SerializeField] TMPro.TextMeshProUGUI completionRateText;
+        float completionRate = 0;
+        [SerializeField] Image reviewImg;
+        [SerializeField] TMPro.TextMeshProUGUI reviewLabel;
+        [SerializeField] TMPro.TextMeshProUGUI reviewDesc;
+        bool lastOrderSucceded = false;
 
         [Header("Time")]
         [SerializeField] float timePerOrder = 30f;
@@ -96,8 +102,11 @@ namespace Hackathon.Game.Clients
         }
         public void ReceiveTour(Tour tour)
         {
-            if(requests[ordersCompleted].IsTourGood(tour))
+            if (requests[ordersCompleted].IsTourGood(tour))
+            {
                 ordersSucceded++;
+                lastOrderSucceded = true;
+            }
             
             EndOrder(true);
         }
@@ -137,7 +146,11 @@ namespace Hackathon.Game.Clients
             completionRate = (float)ordersSucceded / ordersCompleted;
             completionRateText.text = (completionRate*100).ToString("F0") + "%";
             
+            
             //Update Tablet
+            requests[ordersCompleted-1].SetReviewData(reviewLabel, reviewDesc, 
+                                                        reviewImg, lastOrderSucceded);
+            lastOrderSucceded = false;
         }
     }
 }

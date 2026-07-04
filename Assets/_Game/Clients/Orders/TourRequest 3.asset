@@ -12,10 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeb5b02fcfe92be479cbb7da96dfc09e, type: 3}
   m_Name: TourRequest 3
   m_EditorClassIdentifier: Assembly-CSharp::Hackathon.Game.Clients.TourRequestSO
-  clientSprite: {fileID: 21300000, guid: 644e47f2d0a0abe44af4e7dafd26b511, type: 3}
-  inkIntro: {fileID: 4900000, guid: f60b25350f32e5e4392a71be6eeb3020, type: 3}
-  inkOutro: {fileID: 0}
-  inkCancel: {fileID: 0}
   locationRequests:
   - location: {fileID: 11400000, guid: cca6d1352c16f924b9df172267a4d4d3, type: 2}
     locationTag: 0
@@ -25,3 +21,14 @@ MonoBehaviour:
     locationTag: 4
     minDistance: 0
     maxDistance: 0
+  clientSprite: {fileID: 21300000, guid: 644e47f2d0a0abe44af4e7dafd26b511, type: 3}
+  inkIntro: {fileID: 4900000, guid: f60b25350f32e5e4392a71be6eeb3020, type: 3}
+  inkOutro: {fileID: 0}
+  inkCancel: {fileID: 0}
+  clientName: Jean Martin
+  badReviewDesc: "\xA1Ohh! Terrible el lugar. No pude hacer nada de lo que queria
+    en el dia. No recomiendo para nada."
+  badReviewImg: {fileID: 21300000, guid: 9dc9f70023326d349945d54a5773a10f, type: 3}
+  goodReviewDesc: "\xA1Magnifique! Una exquisites el servicio, el recorrido, impecable
+    tambi\xE9n. Recomiendo 100% "
+  goodReviewImg: {fileID: 21300000, guid: 7c8b4aed1e6810a44bbee247bcff5c34, type: 3}

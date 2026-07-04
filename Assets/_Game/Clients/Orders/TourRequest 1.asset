@@ -16,6 +16,13 @@ MonoBehaviour:
   inkIntro: {fileID: 4900000, guid: 0685d0d8df626c046819443e4c7fc501, type: 3}
   inkOutro: {fileID: 0}
   inkCancel: {fileID: 0}
+  clientName: Robert
+  goodReviewDesc: "Excelente servicio, disfrute mucho del recorrido. El Bar fue incre\xEDble,
+    mi estomago de verdad lo necesitaba"
+  goodReviewImg: {fileID: 21300000, guid: f1f4a799a642be44eb0a65dd1e074a28, type: 3}
+  badReviewDesc: "Buena atenci\xF3n, aunque quiza no se entendi\xF3 bien a d\xF3nde
+    quer\xEDa ir"
+  badReviewImg: {fileID: 21300000, guid: 43c14af108e32c0419717ca5357cc15c, type: 3}
   locationRequests:
   - location: {fileID: 0}
     locationTag: 0

@@ -5,11 +5,21 @@ namespace Hackathon.Game.Clients
     [CreateAssetMenu(fileName = "TourRequest", menuName = "Hackathon/TourRequest")]
     public class TourRequestSO : ScriptableObject
     {
+        [Header("Tour Request")]
+        [SerializeField] LocationRequest[] locationRequests;
+        
+        [Header("Client & Dialogue")]
         [SerializeField] Sprite clientSprite;
         [SerializeField] TextAsset inkIntro;
         [SerializeField] TextAsset inkOutro;
         [SerializeField] TextAsset inkCancel;
-        [SerializeField] LocationRequest[] locationRequests;
+        
+        [Header("Review")]
+        [SerializeField] string clientName;
+        [SerializeField] string badReviewDesc;
+        [SerializeField] Sprite badReviewImg;
+        [SerializeField] string goodReviewDesc;
+        [SerializeField] Sprite goodReviewImg;
         
         public Sprite ClientSprite => clientSprite;
         public TextAsset InkIntro => inkIntro;
@@ -32,6 +42,17 @@ namespace Hackathon.Game.Clients
             }
             
             return true;
+        }
+
+        public void SetReviewData(TMPro.TextMeshProUGUI reviewName,
+            TMPro.TextMeshProUGUI reviewDesc,
+            UnityEngine.UI.Image reviewImg, bool isOrderGood)
+        {
+            reviewName.text = clientName;
+            
+            reviewDesc.text = isOrderGood ? goodReviewDesc : badReviewDesc;
+            reviewImg.sprite = isOrderGood ? goodReviewImg : badReviewImg;
+            reviewImg.gameObject.SetActive(true);
         }
     }
 }
