@@ -23,6 +23,8 @@ namespace Universal
         {
             if(isOn) return;
             
+            gameObject.SetActive(true);
+            
             if (cTask != null) StopCoroutine(cTask);
             cTask = StartCoroutine(FadeTask(false, fadeInTime));
         }
@@ -50,6 +52,9 @@ namespace Universal
             } while (timer < time);
 
             isOn = !fadeOut;
+            if(!isOn) gameObject.SetActive(false);
+            
+            cTask = null;
         }
     }
 }

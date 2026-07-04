@@ -8,23 +8,11 @@ namespace Hackathon.Game
         [SerializeField] LocationSO so;
 
         [SerializeField] UnityEngine.UI.Image[] tagCircles;
-        
-        [Header("Hover UI")]
-        [SerializeField] Universal.FadeController hoverPanel;
-        [SerializeField] UnityEngine.UI.Image hoverImage;
-        [SerializeField] TMPro.TextMeshProUGUI hoverLabel;
-        [SerializeField] TMPro.TextMeshProUGUI hoverDesc;
 
         public System.Action<Location> OnSelected;
         public List<LocationSO.Tag> Tags => so.Tags;
         public string Name => so.Name;
-
-        void Awake()
-        {
-            hoverImage.sprite = so.Sprite;
-            hoverLabel.text = so.Name;
-            hoverDesc.text = so.Description;
-        }
+        public LocationSO SO => so;
 
         public void SelectLocation() => OnSelected?.Invoke(this);
 
