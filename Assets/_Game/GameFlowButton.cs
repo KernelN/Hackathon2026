@@ -1,3 +1,4 @@
+using System;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,11 +7,20 @@ namespace Hackathon
 {
     public class GameFlowButton : MonoBehaviour
     {
+#if UNITY_EDITOR
         [SerializeField] SceneAsset sceneToChange;
+        void OnValidate()
+        {
+            if(sceneToChange)
+                sceneName = sceneToChange.name;
+        }
+#endif
+        
+        [SerializeField] string sceneName;
         public void ChangeScene()
         {
             if(Time.timeScale == 0) Time.timeScale = 1;
-            SceneManager.LoadSceneAsync(sceneToChange.name);
+            SceneManager.LoadSceneAsync(sceneName);
         }
 
         public void Quit() => Application.Quit();

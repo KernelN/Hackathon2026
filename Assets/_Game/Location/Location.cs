@@ -37,8 +37,10 @@ namespace Hackathon.Game
             int i = 0;
             while (i < tagCircles.Length)
             {
+#if UNITY_EDITOR
                 UnityEditor.EditorUtility.SetDirty(gameObject);
-                UnityEditor.Undo.RecordObject(tagCircles[i], "Set "+so.name+" color");
+                UnityEditor.Undo.RecordObject(tagCircles[i], "Set " + so.name + " color");
+#endif
                 tagCircles[i].color = LocationSO.TagColor(so.Tags[i % so.Tags.Count]);
                 
                 i++;

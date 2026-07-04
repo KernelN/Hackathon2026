@@ -1214,6 +1214,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Comercio
       objectReference: {fileID: 0}
+    - target: {fileID: 5293366327322729357, guid: e34a293bd82f4894585f031ca4850715, type: 3}
+      propertyPath: m_fontSize
+      value: 5.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5989944985905922539, guid: e34a293bd82f4894585f031ca4850715, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2246,6 +2250,10 @@ PrefabInstance:
     - target: {fileID: 5293366327322729357, guid: e34a293bd82f4894585f031ca4850715, type: 3}
       propertyPath: m_text
       value: Religion
+      objectReference: {fileID: 0}
+    - target: {fileID: 5293366327322729357, guid: e34a293bd82f4894585f031ca4850715, type: 3}
+      propertyPath: m_fontSize
+      value: 6.2
       objectReference: {fileID: 0}
     - target: {fileID: 5989944985905922539, guid: e34a293bd82f4894585f031ca4850715, type: 3}
       propertyPath: m_Pivot.x
@@ -3440,6 +3448,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 380617518}
     m_Modifications:
+    - target: {fileID: 1071587651849626203, guid: 467cc2bfdcce9814fa85f0ee8a28ea16, type: 3}
+      propertyPath: sceneName
+      value: _Menu
+      objectReference: {fileID: 0}
     - target: {fileID: 1071587651849626203, guid: 467cc2bfdcce9814fa85f0ee8a28ea16, type: 3}
       propertyPath: sceneToChange
       value: 
@@ -7953,6 +7965,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 380617518}
     m_Modifications:
     - target: {fileID: 1071587651849626203, guid: 467cc2bfdcce9814fa85f0ee8a28ea16, type: 3}
+      propertyPath: sceneName
+      value: _Game
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071587651849626203, guid: 467cc2bfdcce9814fa85f0ee8a28ea16, type: 3}
       propertyPath: sceneToChange
       value: 
       objectReference: {fileID: 102900000, guid: 24e050665315e1c43894d9fde8aa3159, type: 3}
@@ -12165,6 +12181,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Parque
       objectReference: {fileID: 0}
+    - target: {fileID: 5293366327322729357, guid: e34a293bd82f4894585f031ca4850715, type: 3}
+      propertyPath: m_fontSize
+      value: 7.15
+      objectReference: {fileID: 0}
     - target: {fileID: 5989944985905922539, guid: e34a293bd82f4894585f031ca4850715, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -14835,6 +14855,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Gastronomia
       objectReference: {fileID: 0}
+    - target: {fileID: 5293366327322729357, guid: e34a293bd82f4894585f031ca4850715, type: 3}
+      propertyPath: m_fontSize
+      value: 3.95
+      objectReference: {fileID: 0}
     - target: {fileID: 5989944985905922539, guid: e34a293bd82f4894585f031ca4850715, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -14944,6 +14968,10 @@ PrefabInstance:
     - target: {fileID: 5293366327322729357, guid: e34a293bd82f4894585f031ca4850715, type: 3}
       propertyPath: m_text
       value: Educacion
+      objectReference: {fileID: 0}
+    - target: {fileID: 5293366327322729357, guid: e34a293bd82f4894585f031ca4850715, type: 3}
+      propertyPath: m_fontSize
+      value: 4.85
       objectReference: {fileID: 0}
     - target: {fileID: 5989944985905922539, guid: e34a293bd82f4894585f031ca4850715, type: 3}
       propertyPath: m_Pivot.x
@@ -21672,6 +21700,10 @@ PrefabInstance:
     - target: {fileID: 5293366327322729357, guid: e34a293bd82f4894585f031ca4850715, type: 3}
       propertyPath: m_text
       value: Edificio Historico
+      objectReference: {fileID: 0}
+    - target: {fileID: 5293366327322729357, guid: e34a293bd82f4894585f031ca4850715, type: 3}
+      propertyPath: m_fontSize
+      value: 5.75
       objectReference: {fileID: 0}
     - target: {fileID: 5989944985905922539, guid: e34a293bd82f4894585f031ca4850715, type: 3}
       propertyPath: m_Pivot.x
