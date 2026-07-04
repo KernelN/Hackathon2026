@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2520921822800470891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2447968915505095278}
+  - component: {fileID: 9166932546168081955}
+  m_Layer: 0
+  m_Name: Order Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2447968915505095278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2520921822800470891}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 427.69244, y: 250.19106, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9166932546168081955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2520921822800470891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbe0902fd1b0eb34f89fcd1b597652e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Hackathon.Game.Clients.OrderManager
+  requests:
+  - {fileID: 11400000, guid: 2b9beb45d06cdaf46bc27ac93bf52b95, type: 2}
+  - {fileID: 11400000, guid: 8f63f42661309ad47a43135b22a31993, type: 2}
+  - {fileID: 11400000, guid: 4aeb8765b8c85d144af3f6814542b37c, type: 2}
+  client: {fileID: 0}
+  timeBetweenClients: 1
+  completionRateText: {fileID: 0}
+  reviewImg: {fileID: 0}
+  reviewLabel: {fileID: 0}
+  reviewDesc: {fileID: 0}
+  timePerOrder: 30
+  timeBarFader: {fileID: 0}
+  timeBarFill: {fileID: 0}
+  OnOrdersEnded:
+    m_PersistentCalls:
+      m_Calls: []
