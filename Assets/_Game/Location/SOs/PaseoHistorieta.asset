@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: PaseoHistorieta
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  locationTags: 05000000
+  sprite: {fileID: 21300000, guid: 4cf5fe532804de84ab6ce2affea3abc7, type: 3}
+  tags: 05000000
   locationName: Paseo de la Historieta
   description: "El paseo se inicia en Defensa y Chile con Mafalda, Susanita y Manolito
     (la mundialmente c\xE9lebre ni\xF1a y sus amigos, creados por Quino). Contin\xFAa

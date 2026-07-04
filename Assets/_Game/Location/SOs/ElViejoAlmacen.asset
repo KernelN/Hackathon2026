@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: ElViejoAlmacen
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  locationTags: 0300000001000000
+  sprite: {fileID: 21300000, guid: 5651c09066573834dbccc55f4a631a67, type: 3}
+  tags: 0300000001000000
   locationName: "El Viejo Almac\xE9n"
   description: "En pleno barrio de San Telmo, m\xE1s precisamente en la esquina de
     av. Independencia  y Balcarce, se encuentra El Viejo Almac\xE9n.   Lo que fuera

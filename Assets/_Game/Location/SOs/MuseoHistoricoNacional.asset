@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: MuseoHistoricoNacional
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  locationTags: 00000000
+  sprite: {fileID: 21300000, guid: bcf6faaac0e96044c8f1b4d958ec466a, type: 3}
+  tags: 00000000
   locationName: "Museo Hist\xF3rico Nacional"
   description: "El Museo propone un recorrido por las culturas de los pueblos originarios,
     la \xE9poca de la conquista y el establecimiento del orden colonial, la Revoluci\xF3n

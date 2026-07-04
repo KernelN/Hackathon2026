@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: PalacioLezamaFabricaCanale
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  locationTags: 03000000
+  sprite: {fileID: 21300000, guid: bcf6faaac0e96044c8f1b4d958ec466a, type: 3}
+  tags: 03000000
   locationName: "Palacio Lezama - F\xE1brica Canale"
   description: "En este edificio, conocido en la actualidad como Palacio Lezama,
     funcion\xF3 la f\xE1brica de los tradicionales \"Bizcochos Canale\u201D. En 1875

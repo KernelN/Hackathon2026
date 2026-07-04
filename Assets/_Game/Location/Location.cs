@@ -7,9 +7,24 @@ namespace Hackathon.Game
     {
         [SerializeField] LocationSO so;
 
+        [SerializeField] UnityEngine.UI.Image[] tagCircles;
+        
+        [Header("Hover UI")]
+        [SerializeField] Universal.FadeController hoverPanel;
+        [SerializeField] UnityEngine.UI.Image hoverImage;
+        [SerializeField] TMPro.TextMeshProUGUI hoverLabel;
+        [SerializeField] TMPro.TextMeshProUGUI hoverDesc;
+
         public System.Action<Location> OnSelected;
         public List<LocationSO.Tag> Tags => so.Tags;
         public string Name => so.Name;
+
+        void Awake()
+        {
+            hoverImage.sprite = so.Sprite;
+            hoverLabel.text = so.Name;
+            hoverDesc.text = so.Description;
+        }
 
         public void SelectLocation() => OnSelected?.Invoke(this);
 
@@ -18,5 +33,25 @@ namespace Hackathon.Game
 
         public float Dist(Location otherLocation) 
             => (transform.position - otherLocation.transform.position).magnitude;
+
+        [ContextMenu("Set Game Object")]
+        void SetGameObject()
+        {
+            if (!so) return;
+            
+            gameObject.name = so.name;
+
+            //Set circles
+            //If it has less tags than circles, loop through circles
+            int i = 0;
+            while (i < tagCircles.Length)
+            {
+                UnityEditor.EditorUtility.SetDirty(gameObject);
+                UnityEditor.Undo.RecordObject(tagCircles[i], "Set "+so.name+" color");
+                tagCircles[i].color = LocationSO.TagColor(so.Tags[i % so.Tags.Count]);
+                
+                i++;
+            }
+        }
     }
 }

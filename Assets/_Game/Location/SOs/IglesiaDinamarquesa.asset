@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: IglesiaDinamarquesa
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  locationTags: 02000000
+  sprite: {fileID: 21300000, guid: bf3633c63d3f55941b1cdf2cbfad9dd9, type: 3}
+  tags: 02000000
   locationName: Iglesia Dinamarquesa
   description: "La construcci\xF3n de esta iglesia fue financiada por la comunidad
     de inmigrantes daneses de Buenos Aires, con aportes de la organizaci\xF3n Iglesia

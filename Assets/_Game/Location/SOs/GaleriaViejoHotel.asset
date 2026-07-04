@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: GaleriaViejoHotel
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  locationTags: 04000000
+  sprite: {fileID: 21300000, guid: fe947f740b96085479a3d6fd79be938c, type: 3}
+  tags: 04000000
   locationName: "Galer\xEDa del Viejo Hotel"
   description: "Este antiguo hotel barrial se transform\xF3 en el a\xF1o 1979 en
     galer\xEDa de arte y atelier de pintores y escultores. Su fachada fue modificada,

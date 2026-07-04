@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: PasajeDefensa
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  locationTags: 0300000005000000
+  sprite: {fileID: 21300000, guid: a027abbfe218a8b488bd06abaecdebdf, type: 3}
+  tags: 0300000005000000
   locationName: Pasaje Defensa
   description: "Esta tradicional casona de dos plantas, construida en la d\xE9cada
     de los a\xF1os 1880, fue residencia de los Ezeiza, una distinguida familia de

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: CasaMinima
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  locationTags: 03000000
+  sprite: {fileID: 21300000, guid: 6f9136c68b0bb6248baa5d5fc9fd7b03, type: 3}
+  tags: 03000000
   locationName: "Casa M\xEDnima"
   description: "Con apenas 2,50 metros de frente, a esta casa, que fue parte de una
     vivienda de la segunda d\xE9cada del siglo XIX, se la conoce como la m\xE1s angosta

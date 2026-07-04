@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: MuseoModerno
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  locationTags: 00000000
+  sprite: {fileID: 21300000, guid: 1cc1285b5a792794db1551b4e2cb1fb8, type: 3}
+  tags: 00000000
   locationName: Museo Moderno
   description: "En el coraz\xF3n del Casco Hist\xF3rico, en pleno barrio de San Telmo,
     el Museo Moderno pone a tu disposici\xF3n una rica colecci\xF3n del arte argentino

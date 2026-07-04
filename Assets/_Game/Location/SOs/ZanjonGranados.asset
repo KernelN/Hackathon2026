@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: ZanjonGranados
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  locationTags: 0300000000000000
+  sprite: {fileID: 21300000, guid: 01041a44933a051438090f288f71f2c6, type: 3}
+  tags: 0300000000000000
   locationName: "Zanj\xF3n de Granados"
   description: "Este complejo est\xE1 ubicado en lo que fuera la s\xE9ptima y \xFAltima
     manzana sur de la ciudad fundada en 1580 por Juan de Garay. No era el l\xEDmite

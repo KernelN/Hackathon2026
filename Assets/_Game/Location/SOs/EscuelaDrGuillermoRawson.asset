@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728c7da261092304da3a6eca45802b23, type: 3}
   m_Name: EscuelaDrGuillermoRawson
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.LocationSO
-  locationTags: 0300000006000000
+  sprite: {fileID: 21300000, guid: a523a3f39ab50354e808679c765b73c6, type: 3}
+  tags: 0300000006000000
   locationName: Escuela Dr. Guillermo Rawson
   description: "Este solar fue ocupado por la orden de los betlemitas durante el
     siglo XVIII. De esa \xE9poca datan los ejemplares de magnolia que flanquean su
