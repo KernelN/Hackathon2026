@@ -5,7 +5,7 @@ namespace Hackathon.Game
 {
     public class LocationTagShowcase : MonoBehaviour
     {
-        [SerializeField] LocationSO.Tag tag;
+        [SerializeField] new LocationSO.Tag tag;
         [SerializeField] Image img;
         [SerializeField] TMPro.TextMeshProUGUI label;
 
