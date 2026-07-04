@@ -14,10 +14,7 @@ namespace Hackathon.Game
         public string Name => so.Name;
         public LocationSO SO => so;
 
-        void Awake()
-        {
-            SetGameObject();
-        }
+        void Awake() => SetGameObject();
         public void SelectLocation() => OnSelected?.Invoke(this);
         public float SqrDist(Location otherLocation) 
             => (transform.position - otherLocation.transform.position).sqrMagnitude;
