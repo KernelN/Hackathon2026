@@ -24,7 +24,15 @@ namespace Universal.UI
         {
             currentPossition = currentTransform.position;
             mainContent = currentTransform.parent.gameObject;
+
+            int activeChilds = 0;
             totalChild = mainContent.transform.childCount;
+            for (int i = 0; i < totalChild; i++)
+            {
+                if(mainContent.transform.GetChild(i).gameObject.activeInHierarchy)
+                    activeChilds++;
+            }
+            totalChild = activeChilds;
             cIndex = transform.GetSiblingIndex();
         }
 
@@ -59,6 +67,8 @@ namespace Universal.UI
             currentTransform.position = currentPossition;
             
             int nIndex = transform.GetSiblingIndex();
+            
+            if(nIndex >= totalChild) nIndex = totalChild-1;
             
             if(nIndex == cIndex) return;
             

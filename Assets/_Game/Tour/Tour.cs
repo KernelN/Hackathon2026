@@ -6,8 +6,8 @@ namespace Hackathon.Game
     [System.Serializable]
     public class Tour
     {
-        internal List<Location> locations;
-        List<float> distances;
+        [SerializeField] internal List<Location> locations;
+        [SerializeField] List<float> distances;
 
         public Tour()
         {
