@@ -1743,14 +1743,6 @@ PrefabInstance:
       propertyPath: locationInfoPanel
       value: 
       objectReference: {fileID: 3446659581151379960}
-    - target: {fileID: 4932544741864650838, guid: 585349815f9c1d74b98a1f9a40454438, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -145.99998
-      objectReference: {fileID: 0}
-    - target: {fileID: 4932544741864650838, guid: 585349815f9c1d74b98a1f9a40454438, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 52.500027
-      objectReference: {fileID: 0}
     - target: {fileID: 5691272874625730336, guid: 585349815f9c1d74b98a1f9a40454438, type: 3}
       propertyPath: locationInfoPanel
       value: 
