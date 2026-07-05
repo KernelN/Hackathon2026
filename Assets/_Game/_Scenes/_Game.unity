@@ -130,6 +130,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a41304795afa748a657dffd7115325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hackathon.Game.Location
+--- !u!1 &128399942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 128399943}
+  m_Layer: 0
+  m_Name: temp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &128399943
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128399942}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 548.2115, y: 327.333, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &141901939 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6988827325080817570, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
@@ -1260,6 +1291,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 996236838}
     - target: {fileID: 9166932546168081955, guid: 961d5bc72e0bac244ace341ecab8f9ba, type: 3}
+      propertyPath: clockThingy
+      value: 
+      objectReference: {fileID: 128399943}
+    - target: {fileID: 9166932546168081955, guid: 961d5bc72e0bac244ace341ecab8f9ba, type: 3}
       propertyPath: reviewLabel
       value: 
       objectReference: {fileID: 1856540399}
@@ -1535,3 +1570,4 @@ SceneRoots:
   - {fileID: 1400331124}
   - {fileID: 395719802}
   - {fileID: 1115550436}
+  - {fileID: 128399943}
