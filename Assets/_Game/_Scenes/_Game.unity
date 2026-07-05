@@ -141,64 +141,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a41304795afa748a657dffd7115325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hackathon.Game.Location
---- !u!1 &165916869
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 165916870}
-  - component: {fileID: 165916871}
-  m_Layer: 0
-  m_Name: Time Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &165916870
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 165916869}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 546.95374, y: 285.31934, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &165916871
+--- !u!114 &165916871 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8738591053639866452, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
+  m_PrefabInstance: {fileID: 5007099129576933130}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 165916869}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf9103caefd4bc148aa54dc9325b6d50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hackathon.Game.TimeManager
-  dayDuration: 150
-  clockThingy: {fileID: 9078257577155041671}
-  backgroundImg1: {fileID: 5907193211519804839}
-  backgroundImg2: {fileID: 5907193211519804838}
-  timedBackgrounds:
-  - background: {fileID: 21300000, guid: 273e275562de28c4580651b201ac4fe4, type: 3}
-    time: 0
-  - background: {fileID: 21300000, guid: 62a7a1a3d85d837469768df085afd41d, type: 3}
-    time: 0.5
-  - background: {fileID: 21300000, guid: 01e92de4fac8eb2428e4a32c91dcad3a, type: 3}
-    time: 1
-  DayEnded:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &244419944
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,7 +567,22 @@ MonoBehaviour:
   popUp: {fileID: 1795660934}
   textUI: {fileID: 895350580}
   buttonUI: {fileID: 1140029835}
-  OnDialogueEnded:
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 165916871}
+        m_TargetAssemblyTypeName: Hackathon.Game.TimeManager, Assembly-CSharp
+        m_MethodName: Pause
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  dialogueEnded:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 796425352}
@@ -632,6 +600,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1498190000}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 165916871}
+        m_TargetAssemblyTypeName: Hackathon.Game.TimeManager, Assembly-CSharp
+        m_MethodName: Pause
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1467,6 +1447,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4694041c80d8c684ca41b00d5f2b2dc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hackathon.Game.TourEntryUI
+--- !u!1001 &5007099129576933130
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3916260254507285723, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
+      propertyPath: m_Name
+      value: Time Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380779134360744404, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 546.95374
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380779134360744404, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 285.31934
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380779134360744404, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380779134360744404, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380779134360744404, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380779134360744404, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380779134360744404, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380779134360744404, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380779134360744404, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380779134360744404, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738591053639866452, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
+      propertyPath: clockThingy
+      value: 
+      objectReference: {fileID: 9078257577155041671}
+    - target: {fileID: 8738591053639866452, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
+      propertyPath: dayDuration
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738591053639866452, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
+      propertyPath: backgroundImg1
+      value: 
+      objectReference: {fileID: 5907193211519804839}
+    - target: {fileID: 8738591053639866452, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
+      propertyPath: backgroundImg2
+      value: 
+      objectReference: {fileID: 5907193211519804838}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
 --- !u!1001 &5174513001665605070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1664,16 +1717,56 @@ PrefabInstance:
       propertyPath: dialoguePlayer
       value: 
       objectReference: {fileID: 845279883}
+    - target: {fileID: 5666443807712258178, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: Disappeared.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666443807712258178, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: Disappeared.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666443807712258178, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: Disappeared.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 165916871}
+    - target: {fileID: 5666443807712258178, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: Disappeared.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666443807712258178, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: Disappeared.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666443807712258178, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: Disappeared.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Hackathon.Game.TimeManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666443807712258178, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: Disappeared.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666443807712258178, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: Disappeared.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8662050655545980205, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
       propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8662050655545980205, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
       propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1498190000}
     - target: {fileID: 8662050655545980205, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 165916871}
+    - target: {fileID: 8662050655545980205, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
       propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662050655545980205, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8662050655545980205, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
@@ -1681,11 +1774,23 @@ PrefabInstance:
       value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 8662050655545980205, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662050655545980205, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
       propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8662050655545980205, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Hackathon.Game.TimeManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662050655545980205, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
       propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662050655545980205, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8996657026550337628, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
@@ -1977,6 +2082,6 @@ SceneRoots:
   - {fileID: 845279884}
   - {fileID: 2027619236}
   - {fileID: 1400331124}
-  - {fileID: 165916870}
+  - {fileID: 5007099129576933130}
   - {fileID: 395719802}
   - {fileID: 1115550436}

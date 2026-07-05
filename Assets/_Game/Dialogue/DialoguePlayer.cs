@@ -2,6 +2,7 @@ using Ink.Runtime;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Hackathon
@@ -19,7 +20,9 @@ namespace Hackathon
         [SerializeField] Button buttonUI = null;
         TextMeshProUGUI storyText;  
         
-        public UnityEvent OnDialogueEnded;
+        public UnityEvent dialogueStarted;
+        [FormerlySerializedAs("OnDialogueEnded")]
+        public UnityEvent dialogueEnded;
 
         public void StartDialogue(TextAsset dialogue)
         {
@@ -30,6 +33,8 @@ namespace Hackathon
             // Remove the default message
             ResetButton();
             StartStory();
+            
+            dialogueStarted?.Invoke();
         }
 
         public void ContinueDialogue()
@@ -76,7 +81,7 @@ namespace Hackathon
                 }
             }
             // If we've read all the content and there's no choices, the story is finished!
-            else OnDialogueEnded?.Invoke();
+            else dialogueEnded?.Invoke();
         }
 
         void OnClickChoiceButton (Choice choice) {
@@ -90,6 +95,7 @@ namespace Hackathon
             TextMeshProUGUI storyText = textUI;
             storyText.text = text;
             storyText.transform.SetParent(uiParent.transform, false);
+            textUI.gameObject.SetActive(true);
             popUp.FadeIn();
         }
 
@@ -99,6 +105,7 @@ namespace Hackathon
             // Creates the button from a prefab
             Button choice = buttonUI;
             choice.transform.SetParent(uiParent.transform, false);
+            buttonUI.gameObject.SetActive(true);
             popUp.FadeIn();
 
             // Gets the text from the button prefab
@@ -115,9 +122,9 @@ namespace Hackathon
         // Destroys all the children of this gameobject (all the UI)
         void ResetButton()
         {
-            // int childCount = uiParent.transform.childCount;
-            // for (int i = childCount - 1; i >= 0; --i) 
-            //     Destroy(uiParent.transform.GetChild(i).gameObject);
+            int childCount = uiParent.transform.childCount;
+            for (int i = childCount - 1; i >= 0; --i) 
+                uiParent.transform.GetChild(i).gameObject.SetActive(false);
             buttonUI.onClick.RemoveAllListeners();
         }
     }

@@ -87,7 +87,6 @@ namespace Hackathon.Game.Clients
             }
             
             MapManager.inst.EnableMap(false);
-            TimeManager.inst.Pause(true);
             ordersCompleted++;
         }
         void DisappearClient() => client.Disappear();
@@ -107,7 +106,6 @@ namespace Hackathon.Game.Clients
             {
                 case OrderStage.Intro:
                     MapManager.inst.EnableMap(true);
-                    TimeManager.inst.Pause(false);
                     currentStage = OrderStage.Tourcraft;
                     break;
                 case OrderStage.Outro:

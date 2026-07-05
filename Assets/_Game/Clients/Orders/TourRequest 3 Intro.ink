@@ -4,5 +4,5 @@
 -> follow1
 
 =follow1
-*[¿Acaso usted conocera un restuarant para conocer?. Oh, y he escuchado de una iglesia dinamarquense por la zona ¿me podria indicar su dirección?]
+¿Acaso usted conocera un restuarant para conocer?. Oh, y he escuchado de una iglesia dinamarquense por la zona ¿me podria indicar su dirección?
 -> END

@@ -15,8 +15,8 @@ namespace Hackathon.Game
         
         [SerializeField] float dayDuration = 2*60f;
         [SerializeField] Transform clockThingy;
-        float dayTimer = 0;
-        bool isPaused;
+        [SerializeField,Tooltip("Tick to start paused")] bool isPaused = true;
+        float dayTimer = Mathf.Infinity; //Avoid unprompted day start
         
         [Header("Background")]
         [SerializeField] Image backgroundImg1;

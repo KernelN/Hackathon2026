@@ -4,5 +4,5 @@
 -> follow1
 
 =follow1
-*[Pero bueno, tenemos interés de conocer la facultad de ingenieria pero antes quisieramos pasar por algún comercio cercano para hacer las compras ¿Tienes alguna ruta de ese estilo?]
+Pero bueno, tenemos interés de conocer la facultad de ingenieria pero antes quisieramos pasar por algún comercio cercano para hacer las compras ¿Tienes alguna ruta de ese estilo?
 -> END

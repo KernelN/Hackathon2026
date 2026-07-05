@@ -12,12 +12,9 @@ namespace Hackathon.Game
         [SerializeField] float timeToAutoQuitToMenu = 10;
 
         [SerializeField] Universal.FadeController gameOverPanel;
+        bool isGameOver = false;
 
-        void Start()
-        {
-            StartCoroutine(WaitToExecute(StartGame, timeToStartGame));
-            
-        }
+        void Start() => StartCoroutine(WaitToExecute(StartGame, timeToStartGame));
 
         void StartGame()
         {
@@ -38,6 +35,8 @@ namespace Hackathon.Game
 
         public void OnGameOver()
         {
+            if(isGameOver) return;
+            isGameOver = true;
             gameOverPanel.FadeIn();
             StartCoroutine(WaitToExecute(GoToMenu, timeToAutoQuitToMenu));
         }

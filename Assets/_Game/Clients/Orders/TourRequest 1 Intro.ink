@@ -4,5 +4,5 @@
 -> follow1
 
 =follow1
-*[Estaba buscando poder conocer algún museo de la zona que tenga algún restaturante cerca para comer después del paseo.]
+Estaba buscando poder conocer algún museo de la zona que tenga algún restaturante cerca para comer después del paseo.
 -> END
