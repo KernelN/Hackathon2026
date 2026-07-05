@@ -54,8 +54,7 @@ MonoBehaviour:
   reviewImg: {fileID: 0}
   reviewLabel: {fileID: 0}
   reviewDesc: {fileID: 0}
-  dayDuration: 30
-  timeBarFader: {fileID: 0}
+  dayDuration: 120
   clockThingy: {fileID: 0}
   OnOrdersEnded:
     m_PersistentCalls:

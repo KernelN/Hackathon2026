@@ -33,7 +33,6 @@ namespace Hackathon.Game.Clients
 
         [Header("Time")]
         [SerializeField] float dayDuration = 2*60f;
-        [SerializeField] Universal.FadeController timeBarFader;
         [SerializeField] Transform clockThingy;
         float dayTimer = 0;
         
@@ -97,7 +96,6 @@ namespace Hackathon.Game.Clients
             {
                 case OrderStage.Intro:
                     MapManager.inst.EnableMap(true);
-                    timeBarFader.FadeIn();
                     currentStage = OrderStage.Tourcraft;
                     break;
                 case OrderStage.Outro:
@@ -141,11 +139,8 @@ namespace Hackathon.Game.Clients
             ordersCompleted++;
         }
 
-        void DisappearClient()
-        {
-            client.Disappear();
-            timeBarFader.FadeOut();
-        }
+        void DisappearClient() => client.Disappear();
+
         void UpdateRate()
         {
             completionRate = (float)ordersSucceded / ordersCompleted;

@@ -1237,6 +1237,9 @@ MonoBehaviour:
   fadeInTime: 1
   fadeOutTime: 1
   canvasGroup: {fileID: 1619748722790581767}
+  completedFade:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!225 &1619748722790581767
 CanvasGroup:
   m_ObjectHideFlags: 0
