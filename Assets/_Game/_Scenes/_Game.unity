@@ -1504,10 +1504,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9078257577155041671}
     - target: {fileID: 8738591053639866452, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
-      propertyPath: dayDuration
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 8738591053639866452, guid: 8a784f1e71e65c844991c82d858ae8ce, type: 3}
       propertyPath: backgroundImg1
       value: 
       objectReference: {fileID: 5907193211519804839}
