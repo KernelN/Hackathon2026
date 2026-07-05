@@ -16,10 +16,11 @@ namespace Hackathon.Game.Clients
         
         [Header("Review")]
         [SerializeField] string clientName;
+        [SerializeField] Sprite clientFace;
         [SerializeField] string badReviewDesc;
-        [SerializeField] Sprite badReviewImg;
+        [SerializeField] int badReviewStars;
         [SerializeField] string goodReviewDesc;
-        [SerializeField] Sprite goodReviewImg;
+        [SerializeField] int goodReviewStars;
         
         public Sprite ClientSprite => clientSprite;
         public TextAsset InkIntro => inkIntro;
@@ -44,15 +45,11 @@ namespace Hackathon.Game.Clients
             return true;
         }
 
-        public void SetReviewData(TMPro.TextMeshProUGUI reviewName,
-            TMPro.TextMeshProUGUI reviewDesc,
-            UnityEngine.UI.Image reviewImg, bool isOrderGood)
+        public void SetReviewData(OrderReviewUI reviewUI, bool isOrderGood)
         {
-            reviewName.text = clientName;
-            
-            reviewDesc.text = isOrderGood ? goodReviewDesc : badReviewDesc;
-            reviewImg.sprite = isOrderGood ? goodReviewImg : badReviewImg;
-            reviewImg.gameObject.SetActive(true);
+            reviewUI.SetReviewClient(clientFace, clientName);
+            if(isOrderGood) reviewUI.SetReviewDetails(badReviewDesc, badReviewStars);
+            if(isOrderGood) reviewUI.SetReviewDetails(goodReviewDesc, goodReviewStars);
         }
     }
 }

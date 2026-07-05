@@ -26,9 +26,7 @@ namespace Hackathon.Game.Clients
         [Header("Order Feedback")]
         [SerializeField] TMPro.TextMeshProUGUI completionRateText;
         float completionRate = 0;
-        [SerializeField] Image reviewImg;
-        [SerializeField] TMPro.TextMeshProUGUI reviewLabel;
-        [SerializeField] TMPro.TextMeshProUGUI reviewDesc;
+        [SerializeField] OrderReviewUI orderReviewUI;
         bool lastOrderSucceded = false;
 
         [Header("Time")]
@@ -37,7 +35,7 @@ namespace Hackathon.Game.Clients
         float dayTimer = 0;
         
         public UnityEvent OnOrdersEnded;
-        
+
         [ContextMenu("Start")]
         public void GameStart()
         {
@@ -148,8 +146,7 @@ namespace Hackathon.Game.Clients
             
             
             //Update Tablet
-            requests[ordersCompleted-1].SetReviewData(reviewLabel, reviewDesc, 
-                                                        reviewImg, lastOrderSucceded);
+            requests[ordersCompleted-1].SetReviewData(orderReviewUI, lastOrderSucceded);
             lastOrderSucceded = false;
         }
     }

@@ -790,17 +790,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a41304795afa748a657dffd7115325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hackathon.Game.Location
---- !u!114 &1282985657 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5335398425816553195, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
-  m_PrefabInstance: {fileID: 5907193211519804836}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!114 &1340542173 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 745118250883903141, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
@@ -1232,7 +1221,7 @@ PrefabInstance:
     - target: {fileID: 9166932546168081955, guid: 961d5bc72e0bac244ace341ecab8f9ba, type: 3}
       propertyPath: reviewImg
       value: 
-      objectReference: {fileID: 1282985657}
+      objectReference: {fileID: 0}
     - target: {fileID: 9166932546168081955, guid: 961d5bc72e0bac244ace341ecab8f9ba, type: 3}
       propertyPath: reviewDesc
       value: 
@@ -1253,6 +1242,10 @@ PrefabInstance:
       propertyPath: timeBarFader
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 9166932546168081955, guid: 961d5bc72e0bac244ace341ecab8f9ba, type: 3}
+      propertyPath: orderReviewUI
+      value: 
+      objectReference: {fileID: 5907193211519804837}
     - target: {fileID: 9166932546168081955, guid: 961d5bc72e0bac244ace341ecab8f9ba, type: 3}
       propertyPath: completionRateText
       value: 
@@ -1302,42 +1295,6 @@ PrefabInstance:
       propertyPath: dialoguePlayer
       value: 
       objectReference: {fileID: 845279883}
-    - target: {fileID: 5723976493611213027, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -158.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5723976493611213027, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -165.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6620451042588617156, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
-      propertyPath: m_fontSize
-      value: 26.53
-      objectReference: {fileID: 0}
-    - target: {fileID: 6620451042588617156, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
-      propertyPath: m_fontStyle
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6620451042588617156, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 26.53
-      objectReference: {fileID: 0}
-    - target: {fileID: 7144201871311492762, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 145.8896
-      objectReference: {fileID: 0}
-    - target: {fileID: 7144201871311492762, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 84.3715
-      objectReference: {fileID: 0}
-    - target: {fileID: 7144201871311492762, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 82.945
-      objectReference: {fileID: 0}
-    - target: {fileID: 7144201871311492762, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -396.96
-      objectReference: {fileID: 0}
     - target: {fileID: 8996657026550337628, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1423,6 +1380,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+--- !u!114 &5907193211519804837 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4309828163843461929, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+  m_PrefabInstance: {fileID: 5907193211519804836}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9145816b026b4434292bc9361e28bb04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Hackathon.Game.Clients.OrderReviewUI
 --- !u!224 &7562909690974294856 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5808931162910785771, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
@@ -1520,10 +1488,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3151829486082360197, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.2877045
+      objectReference: {fileID: 0}
     - target: {fileID: 3650689046970425649, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1400331123}
+    - target: {fileID: 4414308212245066965, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.2877045
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027848911539912190, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.16000366
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430454609414699992, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -11.861176
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430454609414699992, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -78.33298
+      objectReference: {fileID: 0}
     - target: {fileID: 6555002319764010417, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
       propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
