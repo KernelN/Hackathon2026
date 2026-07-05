@@ -32,6 +32,12 @@ namespace Hackathon
             StartStory();
         }
 
+        public void ContinueDialogue()
+        {
+            if(story && story.currentChoices.Count > 0)
+                OnClickChoiceButton(story.currentChoices[0]);
+        }
+
         // Creates a new Story object with the compiled story which we can then play!
         void StartStory()
         {
