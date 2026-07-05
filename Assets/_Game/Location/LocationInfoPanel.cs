@@ -56,16 +56,11 @@ namespace Hackathon.Game
         {
             if(location) SetInfo(location);
             fadeController.FadeIn(true);
-            hovers++;
         }
+
         public void Disappear()
         {
-            hovers--;
-            if (hovers <= 0)
-            {
-                fadeController.FadeOut(true);
-                hovers = 0;
-            }
+            fadeController.FadeOut(true);
         }
     }
 }
