@@ -1302,6 +1302,42 @@ PrefabInstance:
       propertyPath: dialoguePlayer
       value: 
       objectReference: {fileID: 845279883}
+    - target: {fileID: 5723976493611213027, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -158.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5723976493611213027, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -165.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620451042588617156, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: m_fontSize
+      value: 26.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620451042588617156, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620451042588617156, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 26.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144201871311492762, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 145.8896
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144201871311492762, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 84.3715
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144201871311492762, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 82.945
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144201871311492762, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -396.96
+      objectReference: {fileID: 0}
     - target: {fileID: 8996657026550337628, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
