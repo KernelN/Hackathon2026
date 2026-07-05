@@ -992,18 +992,6 @@ PrefabInstance:
       propertyPath: sceneToChange
       value: 
       objectReference: {fileID: 102900000, guid: 8d2cfd6d2642df14c93de0d50fe8b8e9, type: 3}
-    - target: {fileID: 1507246788990979620, guid: 467cc2bfdcce9814fa85f0ee8a28ea16, type: 3}
-      propertyPath: m_Color.b
-      value: 0.787
-      objectReference: {fileID: 0}
-    - target: {fileID: 1507246788990979620, guid: 467cc2bfdcce9814fa85f0ee8a28ea16, type: 3}
-      propertyPath: m_Color.g
-      value: 0.93965
-      objectReference: {fileID: 0}
-    - target: {fileID: 1507246788990979620, guid: 467cc2bfdcce9814fa85f0ee8a28ea16, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2682204497371153298, guid: 467cc2bfdcce9814fa85f0ee8a28ea16, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

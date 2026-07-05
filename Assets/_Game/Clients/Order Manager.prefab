@@ -53,10 +53,8 @@ MonoBehaviour:
   client: {fileID: 0}
   timeBetweenClients: 1
   completionRateText: {fileID: 0}
-  reviewImg: {fileID: 0}
-  reviewLabel: {fileID: 0}
-  reviewDesc: {fileID: 0}
-  dayDuration: 120
+  orderReviewUI: {fileID: 0}
+  dayDuration: 150
   clockThingy: {fileID: 0}
   OnOrdersEnded:
     m_PersistentCalls:
