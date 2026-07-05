@@ -48,6 +48,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2b9beb45d06cdaf46bc27ac93bf52b95, type: 2}
   - {fileID: 11400000, guid: 8f63f42661309ad47a43135b22a31993, type: 2}
   - {fileID: 11400000, guid: 4aeb8765b8c85d144af3f6814542b37c, type: 2}
+  - {fileID: 11400000, guid: 82adef459f12a6346bcac8993beaec46, type: 2}
+  - {fileID: 11400000, guid: ab030784b55bb3f4087c9cbd3be7c7f4, type: 2}
   client: {fileID: 0}
   timeBetweenClients: 1
   completionRateText: {fileID: 0}
