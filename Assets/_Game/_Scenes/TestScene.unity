@@ -1506,10 +1506,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1400331123}
+    - target: {fileID: 3955820792955270189, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6555002319764010417, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
       propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1400331123}
+    - target: {fileID: 6849485493184335637, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

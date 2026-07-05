@@ -147,7 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1383,22 +1383,6 @@ PrefabInstance:
     - target: {fileID: 3326288054827942447, guid: ea88d3747c11d2c4ab4053337eb8b0af, type: 3}
       propertyPath: m_Name
       value: Tour Panel
-      objectReference: {fileID: 0}
-    - target: {fileID: 5632944400893550241, guid: ea88d3747c11d2c4ab4053337eb8b0af, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5632944400893550241, guid: ea88d3747c11d2c4ab4053337eb8b0af, type: 3}
-      propertyPath: m_Color.b
-      value: 0.6313726
-      objectReference: {fileID: 0}
-    - target: {fileID: 5632944400893550241, guid: ea88d3747c11d2c4ab4053337eb8b0af, type: 3}
-      propertyPath: m_Color.g
-      value: 0.95294124
-      objectReference: {fileID: 0}
-    - target: {fileID: 5632944400893550241, guid: ea88d3747c11d2c4ab4053337eb8b0af, type: 3}
-      propertyPath: m_Color.r
-      value: 0.9960785
       objectReference: {fileID: 0}
     - target: {fileID: 7663362348439754679, guid: ea88d3747c11d2c4ab4053337eb8b0af, type: 3}
       propertyPath: m_AnchoredPosition.x
