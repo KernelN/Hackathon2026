@@ -1302,14 +1302,6 @@ PrefabInstance:
       propertyPath: dialoguePlayer
       value: 
       objectReference: {fileID: 845279883}
-    - target: {fileID: 8133402076631726000, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 122.3086
-      objectReference: {fileID: 0}
-    - target: {fileID: 8133402076631726000, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 145.62228
-      objectReference: {fileID: 0}
     - target: {fileID: 8996657026550337628, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1492,38 +1484,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3151829486082360197, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 1.2877045
-      objectReference: {fileID: 0}
     - target: {fileID: 3650689046970425649, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1400331123}
-    - target: {fileID: 4053426299577287450, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 1.2876968
-      objectReference: {fileID: 0}
-    - target: {fileID: 4053426299577287450, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.5163574
-      objectReference: {fileID: 0}
-    - target: {fileID: 4414308212245066965, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 1.2877045
-      objectReference: {fileID: 0}
-    - target: {fileID: 4414308212245066965, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.0000076293945
-      objectReference: {fileID: 0}
-    - target: {fileID: 5430454609414699992, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -11.861176
-      objectReference: {fileID: 0}
-    - target: {fileID: 5430454609414699992, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -78.33298
-      objectReference: {fileID: 0}
     - target: {fileID: 6555002319764010417, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
       propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
