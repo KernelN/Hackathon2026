@@ -18,6 +18,7 @@ namespace Hackathon.Game.Clients
         [SerializeField] TourRequestSO[] requests;
         [SerializeField] ClientController client;
         [SerializeField] float timeBetweenClients = 1;
+        float clientDelayTimer = 0;
         OrderStage currentStage;
         int ordersCompleted = 0;
         int ordersSucceded = 0;
@@ -31,10 +32,10 @@ namespace Hackathon.Game.Clients
         bool lastOrderSucceded = false;
 
         [Header("Time")]
-        [SerializeField] float timePerOrder = 30f;
+        [SerializeField] float dayDuration = 2*60f;
         [SerializeField] Universal.FadeController timeBarFader;
-        [SerializeField] Image timeBarFill;
-        float currentTime = 0;
+        [SerializeField] Transform clockThingy;
+        float dayTimer = 0;
         
         public UnityEvent OnOrdersEnded;
         
@@ -43,6 +44,7 @@ namespace Hackathon.Game.Clients
         {
             client.Disappeared.AddListener(OnClientDisappeared);
             
+            dayTimer = dayDuration;
             completionRate = 1;
             completionRateText.text = $"{completionRate*100}%";
             StartOrder();
@@ -53,19 +55,24 @@ namespace Hackathon.Game.Clients
             switch (currentStage)
             {
                 case OrderStage.Tourcraft:
-                    if (currentTime > 0)
+                    if (dayTimer > 0)
                     {
-                        currentTime -= Time.deltaTime;
-                        timeBarFill.fillAmount = currentTime / timePerOrder;
-                        if (currentTime <= 0) EndOrder(false);
+                        dayTimer -= Time.deltaTime;
+                        clockThingy.rotation = Quaternion.Euler(0, 0, 360f * dayTimer / dayDuration);
+                        if (dayTimer <= 0)
+                        {
+                            //EndOrder(false);
+                            DisappearClient();
+                            OnOrdersEnded?.Invoke();
+                        }
                     }
 
                     break;
                 case OrderStage.Outro:
-                    if (currentTime > 0)
+                    if (clientDelayTimer > 0)
                     {
-                        currentTime -= Time.deltaTime;
-                        if (currentTime <= 0)
+                        clientDelayTimer -= Time.deltaTime;
+                        if (clientDelayTimer <= 0)
                         {
                             if(ordersCompleted < requests.Length)
                                 StartOrder();
@@ -80,8 +87,6 @@ namespace Hackathon.Game.Clients
         }
         void StartOrder()
         {
-            currentTime = timePerOrder;
-            timeBarFill.fillAmount = 1;
             TourRequestSO req = requests[ordersCompleted];
             client.Appear(req.ClientSprite, req.InkIntro);
             currentStage = OrderStage.Intro;
@@ -113,7 +118,7 @@ namespace Hackathon.Game.Clients
         public void OnClientDisappeared()
         {
             UpdateRate();
-            currentTime = timeBetweenClients;
+            clientDelayTimer = timeBetweenClients;
         }
         void EndOrder(bool isOrderCompleted)
         {
