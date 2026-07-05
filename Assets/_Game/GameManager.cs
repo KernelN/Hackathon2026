@@ -15,13 +15,27 @@ namespace Hackathon.Game
 
         void Start()
         {
+            StartCoroutine(WaitToExecute(StartGame, timeToStartGame));
+            
+        }
+
+        void StartGame()
+        {
             OrderManager oManager = OrderManager.inst;
             if (oManager)
             {
-                StartCoroutine(WaitToExecute(oManager.GameStart, timeToStartGame));
-                oManager.OnOrdersEnded.AddListener(OnGameOver);
+                oManager.GameStart();
+                oManager.OrdersEnded.AddListener(OnGameOver);
+            }
+            
+            TimeManager tm = TimeManager.inst;
+            if (tm)
+            {
+                tm.StartDay();
+                tm.DayEnded.AddListener(OnGameOver);
             }
         }
+
         public void OnGameOver()
         {
             gameOverPanel.FadeIn();

@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Hackathon.Game.Clients
@@ -28,43 +29,24 @@ namespace Hackathon.Game.Clients
         float completionRate = 0;
         [SerializeField] OrderReviewUI orderReviewUI;
         bool lastOrderSucceded = false;
-
-        [Header("Time")]
-        [SerializeField] float dayDuration = 2*60f;
-        [SerializeField] Transform clockThingy;
-        float dayTimer = 0;
         
-        public UnityEvent OnOrdersEnded;
+        [FormerlySerializedAs("OnOrdersEnded")] public UnityEvent OrdersEnded;
 
         [ContextMenu("Start")]
         public void GameStart()
         {
             client.Disappeared.AddListener(OnClientDisappeared);
             
-            dayTimer = dayDuration;
+            TimeManager.inst.DayEnded.AddListener(OnDayEnded);
+            
             completionRate = 1;
             completionRateText.text = $"{completionRate*100}%";
             StartOrder();
         }
-
         void Update()
         {
             switch (currentStage)
             {
-                case OrderStage.Tourcraft:
-                    if (dayTimer > 0)
-                    {
-                        dayTimer -= Time.deltaTime;
-                        clockThingy.rotation = Quaternion.Euler(0, 0, 360f * dayTimer / dayDuration);
-                        if (dayTimer <= 0)
-                        {
-                            //EndOrder(false);
-                            DisappearClient();
-                            OnOrdersEnded?.Invoke();
-                        }
-                    }
-
-                    break;
                 case OrderStage.Outro:
                     if (clientDelayTimer > 0)
                     {
@@ -74,13 +56,12 @@ namespace Hackathon.Game.Clients
                             if(ordersCompleted < requests.Length)
                                 StartOrder();
                             else
-                                OnOrdersEnded?.Invoke();
+                                OrdersEnded?.Invoke();
                         }
                     }
 
                     break;
             }
-            
         }
         void StartOrder()
         {
@@ -88,12 +69,45 @@ namespace Hackathon.Game.Clients
             client.Appear(req.ClientSprite, req.InkIntro);
             currentStage = OrderStage.Intro;
         }
+        void EndOrder(bool isOrderCompleted)
+        {
+            currentStage = OrderStage.Outro;
+            
+            if (isOrderCompleted)
+            {
+                if (requests[ordersCompleted].InkOutro)
+                    client.StartDialogue(requests[ordersCompleted].InkOutro);
+                else DisappearClient();
+            }
+            else
+            {
+                if (requests[ordersCompleted].InkCancel)
+                    client.StartDialogue(requests[ordersCompleted].InkCancel);
+                else DisappearClient();
+            }
+            
+            MapManager.inst.EnableMap(false);
+            TimeManager.inst.Pause(true);
+            ordersCompleted++;
+        }
+        void DisappearClient() => client.Disappear();
+        void UpdateRate()
+        {
+            completionRate = (float)ordersSucceded / ordersCompleted;
+            completionRateText.text = (completionRate*100).ToString("F0") + "%";
+            
+            
+            //Update Tablet
+            requests[ordersCompleted-1].SetReviewData(orderReviewUI, lastOrderSucceded);
+            lastOrderSucceded = false;
+        }
         public void OnDialogueEnded()
         {
             switch (currentStage)
             {
                 case OrderStage.Intro:
                     MapManager.inst.EnableMap(true);
+                    TimeManager.inst.Pause(false);
                     currentStage = OrderStage.Tourcraft;
                     break;
                 case OrderStage.Outro:
@@ -116,38 +130,10 @@ namespace Hackathon.Game.Clients
             UpdateRate();
             clientDelayTimer = timeBetweenClients;
         }
-        void EndOrder(bool isOrderCompleted)
+        public void OnDayEnded()
         {
-            currentStage = OrderStage.Outro;
-            
-            if (isOrderCompleted)
-            {
-                if (requests[ordersCompleted].InkOutro)
-                    client.StartDialogue(requests[ordersCompleted].InkOutro);
-                else DisappearClient();
-            }
-            else
-            {
-                if (requests[ordersCompleted].InkCancel)
-                    client.StartDialogue(requests[ordersCompleted].InkCancel);
-                else DisappearClient();
-            }
-            
-            MapManager.inst.EnableMap(false);
-            ordersCompleted++;
-        }
-
-        void DisappearClient() => client.Disappear();
-
-        void UpdateRate()
-        {
-            completionRate = (float)ordersSucceded / ordersCompleted;
-            completionRateText.text = (completionRate*100).ToString("F0") + "%";
-            
-            
-            //Update Tablet
-            requests[ordersCompleted-1].SetReviewData(orderReviewUI, lastOrderSucceded);
-            lastOrderSucceded = false;
+            DisappearClient();
+            OrdersEnded?.Invoke();
         }
     }
 }
