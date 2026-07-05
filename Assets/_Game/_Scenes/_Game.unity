@@ -931,7 +931,6 @@ MonoBehaviour:
   - {fileID: 554203443}
   - {fileID: 415920277}
   - {fileID: 2122922289}
-  - {fileID: 1823101822}
   TourClosed:
     m_PersistentCalls:
       m_Calls:
@@ -1185,17 +1184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a41304795afa748a657dffd7115325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hackathon.Game.Location
---- !u!114 &1823101822 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6023079138121024230, guid: a1c4bbec435027e499538fff20b2906b, type: 3}
-  m_PrefabInstance: {fileID: 9078257577155041670}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4694041c80d8c684ca41b00d5f2b2dc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Hackathon.Game.TourEntryUI
 --- !u!114 &1833233345 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8373943197090632549, guid: a1c4bbec435027e499538fff20b2906b, type: 3}

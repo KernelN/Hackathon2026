@@ -81,6 +81,8 @@ namespace Hackathon.Game
             //If it does not contain location, add it
             else
             {
+                if(inactiveEntries.Count == 0) return;
+                
                 currentTour.AddLocation(location);
                 
                 inactiveEntries[0].Location = location;
