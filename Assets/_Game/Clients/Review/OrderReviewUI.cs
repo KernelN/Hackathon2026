@@ -7,6 +7,7 @@ namespace Hackathon.Game.Clients
     public class OrderReviewUI : MonoBehaviour
     {
         [SerializeField] FadeController fader;
+        [SerializeField] AudioSource reviewNotificationPlayer;
         
         [Header("Client Details")]
         [SerializeField] Image clientFaceImg;
@@ -30,6 +31,8 @@ namespace Hackathon.Game.Clients
             //Fill as many stars as review points rated
             for (int i = 0; i < starImgs.Length; i++) 
                 starImgs[i].color = i < reviewPoints ? filledStarColor: emptyStarColor;
+            
+            reviewNotificationPlayer?.Play();
         }
     }
 }
