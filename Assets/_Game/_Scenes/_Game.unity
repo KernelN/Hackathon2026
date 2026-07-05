@@ -1320,6 +1320,14 @@ PrefabInstance:
       propertyPath: dialoguePlayer
       value: 
       objectReference: {fileID: 845279883}
+    - target: {fileID: 8133402076631726000, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 122.3086
+      objectReference: {fileID: 0}
+    - target: {fileID: 8133402076631726000, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 145.62228
+      objectReference: {fileID: 0}
     - target: {fileID: 8996657026550337628, guid: 8c0a3cae95bb0c04eb866b3817b33aaf, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
