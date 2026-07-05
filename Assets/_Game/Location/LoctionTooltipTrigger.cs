@@ -15,12 +15,12 @@ namespace Hackathon.Game
                 locationInfoPanel.transform.position = infoPanelPivot.position;
             if(location)
                 locationInfoPanel.Appear(location.SO);
-            Debug.Log("Pointer entered: " + location.Name);
+            //Debug.Log("Pointer entered: " + location.Name);
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            Debug.Log("Pointer exited: " + location.Name);
+            //Debug.Log("Pointer exited: " + location.Name);
             locationInfoPanel.Disappear();
         }
     }
