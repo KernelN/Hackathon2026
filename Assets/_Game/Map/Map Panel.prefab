@@ -1747,22 +1747,6 @@ PrefabInstance:
       propertyPath: locationInfoPanel
       value: 
       objectReference: {fileID: 3446659581151379960}
-    - target: {fileID: 2242373220752357990, guid: 585349815f9c1d74b98a1f9a40454438, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 144.4132
-      objectReference: {fileID: 0}
-    - target: {fileID: 2242373220752357990, guid: 585349815f9c1d74b98a1f9a40454438, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 130.3972
-      objectReference: {fileID: 0}
-    - target: {fileID: 2242373220752357990, guid: 585349815f9c1d74b98a1f9a40454438, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -22.8007
-      objectReference: {fileID: 0}
-    - target: {fileID: 2242373220752357990, guid: 585349815f9c1d74b98a1f9a40454438, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -32.788
-      objectReference: {fileID: 0}
     - target: {fileID: 2551168107285677656, guid: 585349815f9c1d74b98a1f9a40454438, type: 3}
       propertyPath: locationInfoPanel
       value: 
