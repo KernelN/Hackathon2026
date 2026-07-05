@@ -29,11 +29,16 @@ namespace Universal
         public void FadeIn(bool forceFade = false)
         {
             //Debug.Log("Fader " + (isOn ? "On" : "Off") + "; fading in");
+            if (cTask != null)
+            {
+                //if it is fading in, skip
+                if(!isOn) return;
+                StopCoroutine(cTask);
+            }
             if(!forceFade && isOn) return;
             
             gameObject.SetActive(true);
             
-            if (cTask != null) StopCoroutine(cTask);
             cTask = StartCoroutine(FadeTask(false, fadeInTime));
         }
         public void FadeOut(bool forceFade = false)
