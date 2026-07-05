@@ -24,8 +24,8 @@ namespace Hackathon.Game
             switch (tag)
             {
                 case Tag.Museo: return new Color32(255, 81, 81, 255);
-                case Tag.Gastronomia: return new Color32(255, 149, 58, 255);
-                case Tag.Religion: return new Color32(254, 115, 226, 255);
+                case Tag.Gastronomia: return new Color32(153, 0, 255, 255);
+                case Tag.Religion: return new Color32(255, 154, 235, 255);
                 case Tag.EdificioHistorico: return new Color32(125, 255, 255, 255);
                 case Tag.Comercio: return new Color32(111, 168, 220, 255);
                 case Tag.Parque: return new Color32(117, 196, 82, 255);
