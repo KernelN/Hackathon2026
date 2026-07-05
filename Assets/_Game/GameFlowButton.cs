@@ -17,11 +17,15 @@ namespace Hackathon
 #endif
         
         [SerializeField] string sceneName;
+        [Tooltip("Only applies to 'Change with Delay'")]
+        [SerializeField] float sceneLoadDelay = 1;
         public void ChangeScene()
         {
             if(Time.timeScale == 0) Time.timeScale = 1;
             SceneManager.LoadSceneAsync(sceneName);
         }
+        public void ChangeSceneWithDelay() 
+            => Invoke(nameof(ChangeScene), sceneLoadDelay);
 
         public void Quit() => Application.Quit();
 
