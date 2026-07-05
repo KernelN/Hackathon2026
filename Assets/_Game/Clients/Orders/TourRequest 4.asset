@@ -34,9 +34,10 @@ MonoBehaviour:
   inkOutro: {fileID: 0}
   inkCancel: {fileID: 0}
   clientName: Maria Rosales
+  clientFace: {fileID: 21300000, guid: f0a1955bbd01bcf4cad581f0cff1294d, type: 3}
   badReviewDesc: La proxima voy a prestarle mis lentes al joven, quiza con eso pueda
     ver mejor el recorrido que me otorga
-  badReviewImg: {fileID: 21300000, guid: d5798bf484e44354a9943f6b6558d48d, type: 3}
+  badReviewStars: 1
   goodReviewDesc: "El joven que me atendi\xF3 era  un amor, no solo me trat\xF3 muy
     bien, si no que tambi\xE9n me di\xF3 un paseo incre\xEDble."
-  goodReviewImg: {fileID: 21300000, guid: b6f2f1a6b06819646a6065087c13dbc9, type: 3}
+  goodReviewStars: 5

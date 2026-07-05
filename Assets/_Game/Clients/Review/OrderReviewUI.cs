@@ -19,6 +19,7 @@ namespace Hackathon.Game.Clients
 
         public void SetReviewClient(Sprite clientFace, string clientName)
         {
+            fader.FadeIn();
             clientFaceImg.sprite = clientFace;
             clientNameText.text = clientName;
         }

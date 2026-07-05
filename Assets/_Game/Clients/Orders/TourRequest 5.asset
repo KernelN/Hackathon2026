@@ -26,9 +26,10 @@ MonoBehaviour:
   inkOutro: {fileID: 0}
   inkCancel: {fileID: 0}
   clientName: Zhang Wei
+  clientFace: {fileID: 21300000, guid: 6552fae6ecbf8c94cbeef669b5f94f68, type: 3}
   badReviewDesc: Si antes estaba confundido, termine mucho peor. Y yo que pensaba
     que era al que le faltaba dormir un poco
-  badReviewImg: {fileID: 21300000, guid: 866b2803a6aa81848832a5acc08a4ce0, type: 3}
+  badReviewStars: 2
   goodReviewDesc: "Me salv\xF3 la vida, sin la gu\xEDa del lugar, jam\xE1s hubiera
     llegado a mi destino. \xA1Excelente!"
-  goodReviewImg: {fileID: 21300000, guid: 7a750558192765e4e847581547683140, type: 3}
+  goodReviewStars: 5

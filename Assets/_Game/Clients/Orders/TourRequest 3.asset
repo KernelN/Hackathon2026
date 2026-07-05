@@ -26,9 +26,10 @@ MonoBehaviour:
   inkOutro: {fileID: 0}
   inkCancel: {fileID: 0}
   clientName: Jean Martin
+  clientFace: {fileID: 21300000, guid: 8c6f8743492676d44ab1b084b70b5bb3, type: 3}
   badReviewDesc: "\xA1Ohh! Terrible el lugar. No pude hacer nada de lo que queria
     en el dia. No recomiendo para nada."
-  badReviewImg: {fileID: 21300000, guid: 9dc9f70023326d349945d54a5773a10f, type: 3}
+  badReviewStars: 0
   goodReviewDesc: "\xA1Magnifique! Una exquisites el servicio, el recorrido, impecable
     tambi\xE9n. Recomiendo 100% "
-  goodReviewImg: {fileID: 21300000, guid: 7c8b4aed1e6810a44bbee247bcff5c34, type: 3}
+  goodReviewStars: 5

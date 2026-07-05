@@ -48,8 +48,8 @@ namespace Hackathon.Game.Clients
         public void SetReviewData(OrderReviewUI reviewUI, bool isOrderGood)
         {
             reviewUI.SetReviewClient(clientFace, clientName);
-            if(isOrderGood) reviewUI.SetReviewDetails(badReviewDesc, badReviewStars);
             if(isOrderGood) reviewUI.SetReviewDetails(goodReviewDesc, goodReviewStars);
+            else reviewUI.SetReviewDetails(badReviewDesc, badReviewStars);
         }
     }
 }
