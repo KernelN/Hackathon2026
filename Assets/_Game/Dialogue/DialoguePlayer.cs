@@ -18,6 +18,8 @@ namespace Hackathon
         // UI Prefabs
         [SerializeField] TextMeshProUGUI textUI = null;
         [SerializeField] Button buttonUI = null;
+        [SerializeField] TextMeshProUGUI choiceText = null;
+        [SerializeField] HorizontalLayoutGroup choiceLayoutGroup = null;
         TextMeshProUGUI storyText;  
         
         public UnityEvent dialogueStarted;
@@ -108,13 +110,23 @@ namespace Hackathon
             buttonUI.gameObject.SetActive(true);
             popUp.FadeIn();
 
-            // Gets the text from the button prefab
-            TextMeshProUGUI choiceText = choice.GetComponentInChildren<TextMeshProUGUI>();
-            choiceText.text = text;
+            // Sets the text from the button
+            if (choiceText != null)
+                choiceText.text = text;
+            else
+            {
+                choiceText = choice.GetComponentInChildren<TextMeshProUGUI>();
+                if (choiceText != null) choiceText.text = text;
+            }
 
             // Make the button expand to fit the text
-            HorizontalLayoutGroup layoutGroup = choice.GetComponent<HorizontalLayoutGroup>();
-            layoutGroup.childForceExpandHeight = false;
+            if (choiceLayoutGroup != null)
+                choiceLayoutGroup.childForceExpandHeight = false;
+            else
+            {
+                choiceLayoutGroup = choice.GetComponent<HorizontalLayoutGroup>();
+                if (choiceLayoutGroup != null) layoutGroup.childForceExpandHeight = false;
+            }
 
             return choice;
         }

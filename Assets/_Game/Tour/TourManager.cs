@@ -44,6 +44,7 @@ namespace Hackathon.Game
         {
             currentTour = null;
             while (activeEntries.Count > 0) DestroyTourEntry(activeEntries[0]);
+            UpdateTourBadges();
         }
         public void CompleteTour()
         {
@@ -57,12 +58,14 @@ namespace Hackathon.Game
             TourEntryUI entry = activeEntries[index];
             activeEntries.RemoveAt(index);
             activeEntries.Insert(newIndex, entry);
+            UpdateTourBadges();
         }
         public void RemoveLocationAt(int index)
         {
             currentTour.RemoveLocation(index);
             
             DestroyTourEntry(activeEntries[index]);
+            UpdateTourBadges();
         }
         void OnLocationSelected(Location location)
         {
@@ -87,6 +90,23 @@ namespace Hackathon.Game
                 
                 inactiveEntries[0].Location = location;
                 CreateTourEntry(inactiveEntries[0]);
+            }
+
+            UpdateTourBadges();
+        }
+
+        void UpdateTourBadges()
+        {
+            if (locations != null)
+            {
+                for (var i = 0; i < locations.Length; i++)
+                    if (locations[i]) locations[i].SetTourIndex(-1);
+            }
+
+            for (var i = 0; i < activeEntries.Count; i++)
+            {
+                if (activeEntries[i] && activeEntries[i].Location)
+                    activeEntries[i].Location.SetTourIndex(i);
             }
         }
         void CreateTourEntry(TourEntryUI entry)

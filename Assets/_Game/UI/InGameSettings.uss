@@ -1,0 +1,184 @@
+/* InGameSettings Stylesheet */
+
+.ingame-root {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Outside Darkener: covers everything outside the computer monitor */
+.outside-darkener {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    transition-property: opacity;
+    transition-duration: 0.15s;
+}
+
+/* Room area on the left */
+.outside-darkener-room {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 336px;
+    height: 100%;
+}
+
+/* Computer Settings Container: matching Map Panel exactly */
+.ingame-compu-container {
+    position: absolute;
+    left: 336px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* Yellow Screen Area matching computer viewport */
+.ingame-screen {
+    position: absolute;
+    left: 3.4%;
+    top: 6.1%;
+    right: 3.1%;
+    bottom: 6.6%;
+    background-color: rgb(255, 243, 160);
+    overflow: hidden;
+    align-items: center;
+    padding-top: 24px;
+}
+
+/* Title Frame */
+.title-frame-config {
+    width: 350px;
+    height: 70px;
+    margin-top: 20px;
+    align-self: center;
+    background-image: url("project://database/Assets/_Game/button_square_line.png?fileID=21300000&guid=1e32a606d3caf3743b11b6458d28ddcb&type=3#button_square_line");
+    -unity-slice-left: 9;
+    -unity-slice-top: 9;
+    -unity-slice-right: 9;
+    -unity-slice-bottom: 9;
+    -unity-slice-scale: 1;
+    -unity-background-image-tint-color: rgb(204, 255, 248);
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    border-width: 0;
+}
+
+.title-text-config {
+    width: 100%;
+    height: 100%;
+    -unity-font: url("project://database/Assets/_Game/MainMenu/Distillery%20Strong.otf?fileID=12800000&guid=acb32c0eafdc9724b95ce2902a5dde67&type=3#Distillery Strong");
+    -unity-font-definition: url("project://database/Assets/_Game/MainMenu/Distillery%20Strong.otf?fileID=12800000&guid=acb32c0eafdc9724b95ce2902a5dde67&type=3#Distillery Strong");
+    font-size: 30px;
+    -unity-font-style: bold;
+    color: rgb(0, 0, 0);
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+/* Settings content */
+.settings-content {
+    width: 350px;
+    margin-top: 20px;
+    align-items: flex-end;
+}
+
+/* Audio control inline rows */
+.audio-control-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+/* Audio toggle button with hand-drawn icon */
+.audio-toggle-btn {
+    width: 44px;
+    height: 44px;
+    margin-right: 14px;
+    background-color: transparent;
+    border-width: 0;
+    -unity-background-scale-mode: scale-to-fit;
+    transition-property: scale;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+}
+
+.audio-toggle-btn:hover {
+    scale: 1.12 1.12;
+}
+
+.audio-toggle-btn:active {
+    scale: 0.92 0.92;
+}
+
+.icon-music-on {
+    background-image: url("project://database/Assets/_Game/UI/Icons/icon_music_on.png");
+}
+
+.icon-music-off {
+    background-image: url("project://database/Assets/_Game/UI/Icons/icon_music_off.png");
+}
+
+.icon-sfx-on {
+    background-image: url("project://database/Assets/_Game/UI/Icons/icon_sfx_on.png");
+}
+
+.icon-sfx-off {
+    background-image: url("project://database/Assets/_Game/UI/Icons/icon_sfx_off.png");
+}
+
+/* Slider inline next to icon */
+.settings-slider-inline {
+    flex-grow: 1;
+    margin: 0;
+}
+
+/* Volver Button: only bounces and scales, no horizontal translate */
+.btn-back {
+    width: 155px;
+    height: 38px;
+    font-size: 20px;
+    margin-top: 14px;
+    margin-right: -18px;
+    background-image: url("project://database/Assets/_Game/button_square_line.png?fileID=21300000&guid=1e32a606d3caf3743b11b6458d28ddcb&type=3#button_square_line");
+    -unity-slice-left: 9;
+    -unity-slice-top: 9;
+    -unity-slice-right: 9;
+    -unity-slice-bottom: 9;
+    -unity-slice-scale: 1;
+    -unity-background-image-tint-color: rgb(255, 240, 201);
+    background-color: transparent;
+    -unity-font: url("project://database/Assets/_Game/Map/CyGrotesk-KeyRegular.otf?fileID=12800000&guid=7bfa2f5719265c345b314a9886cf4913&type=3#Cy Grotesk Key");
+    -unity-font-definition: url("project://database/Assets/_Game/Map/CyGrotesk-KeyRegular.otf?fileID=12800000&guid=7bfa2f5719265c345b314a9886cf4913&type=3#Cy Grotesk Key");
+    -unity-font-style: bold;
+    color: rgb(0, 0, 0);
+    -unity-text-align: middle-center;
+    align-items: center;
+    justify-content: center;
+    border-width: 0;
+    transition-property: scale, -unity-background-image-tint-color;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+}
+
+.btn-back:hover {
+    translate: 0 0;
+    scale: 1.06 1.06;
+    -unity-background-image-tint-color: rgb(255, 248, 222);
+}
+
+.btn-back:active {
+    translate: 0 0;
+    scale: 0.94 0.94;
+    -unity-background-image-tint-color: rgb(235, 220, 180);
+}

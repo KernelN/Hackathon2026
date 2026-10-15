@@ -1,0 +1,32 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project:/Assets/_Game/UI/Common.uss" />
+    <Style src="project:/Assets/_Game/UI/SettingsModal.uss" />
+    <ui:VisualElement name="settings-overlay" class="settings-overlay settings-overlay--hidden" picking-mode="Position">
+        <ui:VisualElement name="settings-card" class="settings-card" picking-mode="Position">
+            <ui:Label text="Configuración" name="header" class="settings-header" />
+            
+            <!-- Music Row -->
+            <ui:VisualElement class="settings-row">
+                <ui:Label text="Música" class="settings-row-label" />
+                <ui:VisualElement class="settings-controls-group">
+                    <ui:Slider name="music-slider" low-value="0" high-value="100" value="100" class="settings-slider" />
+                    <ui:Label text="100%" name="music-value" class="settings-value-label" />
+                    <ui:Button text="Silenciar" name="music-mute-btn" class="settings-mute-btn" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <!-- SFX Row -->
+            <ui:VisualElement class="settings-row">
+                <ui:Label text="Efectos" class="settings-row-label" />
+                <ui:VisualElement class="settings-controls-group">
+                    <ui:Slider name="sfx-slider" low-value="0" high-value="100" value="100" class="settings-slider" />
+                    <ui:Label text="100%" name="sfx-value" class="settings-value-label" />
+                    <ui:Button text="Silenciar" name="sfx-mute-btn" class="settings-mute-btn" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <!-- Close Button -->
+            <ui:Button text="Cerrar" name="close-btn" class="settings-close-btn" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

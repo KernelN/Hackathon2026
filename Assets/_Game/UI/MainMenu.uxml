@@ -1,0 +1,49 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Style src="Common.uss" />
+    <ui:Style src="MainMenu.uss" />
+
+    <ui:VisualElement class="main-menu-root" picking-mode="Ignore">
+        <!-- Computer monitor area on the right half of the desk -->
+        <ui:VisualElement class="compu-container" picking-mode="Ignore">
+            
+            <!-- Computer display screen (yellow desktop #FFF3A0) -->
+            <ui:VisualElement class="compu-screen" picking-mode="Ignore">
+                
+                <!-- Main Menu Page -->
+                <ui:VisualElement name="page-main" class="screen-page" picking-mode="Ignore">
+                    <ui:VisualElement class="title-frame" picking-mode="Ignore">
+                        <ui:Label name="lbl-title" text="MI INCREÍBLE&#10;PASEO" class="title-text" picking-mode="Ignore" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="buttons-stack" picking-mode="Ignore">
+                        <ui:Button name="btn-play" text="JUGAR" class="menu-btn btn-play" picking-mode="Position" />
+                        <ui:Button name="btn-settings" text="CONFIGURACIÓN" class="menu-btn btn-settings" picking-mode="Position" />
+                        <ui:Button name="btn-credits" text="CREDITOS" class="menu-btn btn-credits" picking-mode="Position" />
+                        <ui:Button name="btn-exit" text="SALIR" class="menu-btn btn-exit" picking-mode="Position" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <!-- In-Tablet Config Page -->
+                <ui:VisualElement name="page-settings" class="screen-page hidden" picking-mode="Ignore">
+                    <ui:VisualElement class="title-frame title-frame-config" picking-mode="Ignore">
+                        <ui:Label name="lbl-settings-title" text="CONFIGURACIÓN" class="title-text-config" picking-mode="Ignore" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="settings-content" picking-mode="Position">
+                        <ui:VisualElement class="audio-control-row">
+                            <ui:Button name="btn-toggle-music" class="audio-toggle-btn icon-music-on" tooltip="Silenciar / Activar Música" picking-mode="Position" />
+                            <ui:Slider name="slider-music-volume" low-value="0" high-value="1" value="1" class="settings-slider-inline" />
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="audio-control-row">
+                            <ui:Button name="btn-toggle-sfx" class="audio-toggle-btn icon-sfx-on" tooltip="Silenciar / Activar Efectos" picking-mode="Position" />
+                            <ui:Slider name="slider-sfx-volume" low-value="0" high-value="1" value="1" class="settings-slider-inline" />
+                        </ui:VisualElement>
+
+                        <ui:Button name="btn-back-settings" text="VOLVER" class="menu-btn btn-back" picking-mode="Position" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

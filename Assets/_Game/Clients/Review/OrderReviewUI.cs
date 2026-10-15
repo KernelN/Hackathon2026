@@ -32,7 +32,10 @@ namespace Hackathon.Game.Clients
             for (int i = 0; i < starImgs.Length; i++) 
                 starImgs[i].color = i < reviewPoints ? filledStarColor: emptyStarColor;
             
-            reviewNotificationPlayer?.Play();
+            if (Hackathon.Audio.AudioManager.inst != null && reviewNotificationPlayer != null && reviewNotificationPlayer.clip != null)
+                Hackathon.Audio.AudioManager.inst.PlaySFX(reviewNotificationPlayer.clip);
+            else
+                reviewNotificationPlayer?.Play();
         }
     }
 }

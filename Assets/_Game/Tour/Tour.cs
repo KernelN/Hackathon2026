@@ -30,7 +30,8 @@ namespace Hackathon.Game
         public void RemoveLocation(Location location)
         {
             int index = locations.IndexOf(location);
-            RemoveLocation(index, false);
+            if (index >= 0)
+                RemoveLocation(index, true);
         }
         public void AddLocation(Location location)
         {
@@ -41,8 +42,10 @@ namespace Hackathon.Game
         }
         public void MoveLocationIndex(int index, int newIndex)
         {
+            if (index < 0 || index >= locations.Count) return;
             Location loc = locations[index];
             RemoveLocation(index, false);
+            newIndex = Mathf.Clamp(newIndex, 0, locations.Count);
             locations.Insert(newIndex, loc);
             
             UpdateLocationsData();
@@ -50,6 +53,7 @@ namespace Hackathon.Game
         void UpdateLocationsData()
         {
             distances.Clear();
+            if (locations.Count == 0) return;
             distances.Add(0);
             for (int i = 1; i < locations.Count; i++)
             {

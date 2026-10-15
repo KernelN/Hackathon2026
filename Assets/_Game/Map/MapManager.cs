@@ -26,8 +26,13 @@ namespace Hackathon.Game
                     else 
                         locationsByTag.Add(loc.Tags[j], new List<Location> { loc });
         }
+        public bool IsMapEnabled { get; private set; } = false;
+        public System.Action<bool> OnMapEnabledChanged;
+
         public void EnableMap(bool enable)
         {
+            IsMapEnabled = enable;
+            OnMapEnabledChanged?.Invoke(enable);
             if(enable) mapBlockFader.FadeOut();
             else mapBlockFader.FadeIn();
         }
@@ -48,7 +53,7 @@ namespace Hackathon.Game
             {
                 float distA = source.SqrDist(a);
                 float distB = source.SqrDist(b);
-                return distA < distB ? 1 : -1;
+                return distA.CompareTo(distB);
             });
             return result;
         }

@@ -1,0 +1,34 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Style src="Common.uss" />
+    <ui:Style src="InGameSettings.uss" />
+
+    <ui:VisualElement class="ingame-root" picking-mode="Ignore">
+        <!-- Outside room darkener: dims everything outside the computer monitor -->
+        <ui:VisualElement name="outside-darkener" class="outside-darkener hidden" picking-mode="Position">
+            <ui:VisualElement class="outside-darkener-room" picking-mode="Position" />
+        </ui:VisualElement>
+
+        <!-- Diegetic Computer Settings Screen: replaces the map on the computer when settings is open -->
+        <ui:VisualElement name="ingame-settings-container" class="ingame-compu-container hidden" picking-mode="Ignore">
+            <ui:VisualElement class="ingame-screen" picking-mode="Position">
+                <ui:VisualElement class="title-frame title-frame-config" picking-mode="Ignore">
+                    <ui:Label name="lbl-settings-title" text="CONFIGURACIÓN" class="title-text-config" picking-mode="Ignore" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="settings-content" picking-mode="Position">
+                    <ui:VisualElement class="audio-control-row">
+                        <ui:Button name="btn-toggle-music" class="audio-toggle-btn icon-music-on" tooltip="Silenciar / Activar Música" picking-mode="Position" />
+                        <ui:Slider name="slider-music-volume" low-value="0" high-value="1" value="1" class="settings-slider-inline" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="audio-control-row">
+                        <ui:Button name="btn-toggle-sfx" class="audio-toggle-btn icon-sfx-on" tooltip="Silenciar / Activar Efectos" picking-mode="Position" />
+                        <ui:Slider name="slider-sfx-volume" low-value="0" high-value="1" value="1" class="settings-slider-inline" />
+                    </ui:VisualElement>
+
+                    <ui:Button name="btn-close-settings" text="VOLVER" class="menu-btn btn-back" picking-mode="Position" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

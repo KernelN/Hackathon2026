@@ -7,15 +7,50 @@ namespace Hackathon.Game
     {
         [SerializeField] LocationSO so;
 
+        [SerializeField] UnityEngine.UI.Image pinImage;
         [SerializeField] UnityEngine.UI.Image[] tagCircles;
+        [SerializeField] GameObject stopBadge;
+        [SerializeField] TMPro.TextMeshProUGUI stopNumberText;
 
         public System.Action<Location> OnSelected;
         public List<LocationSO.Tag> Tags => so.Tags;
         public string Name => so.Name;
         public LocationSO SO => so;
+        bool isSelected = false;
+        public bool IsSelected => isSelected;
+        int tourIndex = -1;
+        public int TourIndex => tourIndex;
 
-        void Awake() => SetGameObject();
+        void Awake()
+        {
+            SetGameObject();
+
+            if (pinImage != null)
+                pinImage.raycastPadding = new Vector4(-8, -8, -8, -8);
+        }
+
         public void SelectLocation() => OnSelected?.Invoke(this);
+
+        public void SetTourIndex(int index)
+        {
+            tourIndex = index;
+            isSelected = index >= 0;
+
+            if (stopBadge != null)
+            {
+                stopBadge.SetActive(isSelected);
+                if (isSelected && stopNumberText != null)
+                    stopNumberText.text = (tourIndex + 1).ToString();
+            }
+        }
+
+        public void SetSelected(bool selected)
+        {
+            if (!selected)
+                SetTourIndex(-1);
+            else if (tourIndex < 0)
+                SetTourIndex(0);
+        }
         public float SqrDist(Location otherLocation) 
             => (transform.position - otherLocation.transform.position).sqrMagnitude;
 

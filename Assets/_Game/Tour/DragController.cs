@@ -46,9 +46,8 @@ namespace Universal.UI
                 if (i != currentTransform.GetSiblingIndex())
                 {
                     Transform otherTransform = mainContent.transform.GetChild(i);
-                    int distance = (int) Vector3.Distance(currentTransform.position,
-                        otherTransform.position);
-                    if (distance <= 10)
+                    float yDistance = Mathf.Abs(currentTransform.position.y - otherTransform.position.y);
+                    if (yDistance <= 22f)
                     {
                         Vector3 otherTransformOldPosition = otherTransform.position;
                         otherTransform.position = new Vector3(otherTransform.position.x, currentPossition.y,

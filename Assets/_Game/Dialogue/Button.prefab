@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 11455116}
   - component: {fileID: 11420252}
   - component: {fileID: 11438922}
+  - component: {fileID: 6230339193808832663}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -163,6 +164,26 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &6230339193808832663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81855aa8c1fa421e9ca8b9cfc7d94180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Hackathon.UI.UIButtonJuice
+  enableHoverScale: 1
+  enablePressScale: 1
+  enableClickPunch: 1
+  hoverScaleMultiplier: 1.05
+  pressScaleMultiplier: 0.94
+  animationSpeed: 16
+  playClickSound: 1
+  playHoverSound: 1
 --- !u!1 &134058
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +299,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_ActiveFontFeatures: 6e72656bu
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1

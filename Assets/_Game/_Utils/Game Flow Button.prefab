@@ -150,6 +150,7 @@ GameObject:
   - component: {fileID: 1507246788990979620}
   - component: {fileID: 8444278680178425644}
   - component: {fileID: 1071587651849626203}
+  - component: {fileID: 1071587651849626204}
   m_Layer: 5
   m_Name: Game Flow Button
   m_TagString: Untagged
@@ -286,3 +287,24 @@ MonoBehaviour:
   sceneToChange: {fileID: 0}
   sceneName: 
   sceneLoadDelay: 1
+--- !u!114 &1071587651849626204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5652371783508457861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81855aa8c1fa421e9ca8b9cfc7d94180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Hackathon.UI:UIButtonJuice
+  enableHoverScale: 1
+  enablePressScale: 1
+  enableClickPunch: 1
+  hoverScaleMultiplier: 1.05
+  pressScaleMultiplier: 0.94
+  animationSpeed: 16
+  playClickSound: 1
+  playHoverSound: 0
+

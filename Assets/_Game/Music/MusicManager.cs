@@ -2,11 +2,11 @@ using System.Collections;
 using System.IO;
 using UnityEngine;
 
-public class MusicManager : Universal.Singleton<MusicManager>
+public class MusicManager : MonoBehaviour
 {
-    internal override bool DoNotDestroyOnLoad => true;
+    public static MusicManager inst { get; private set; }
 
-    const string ConfigDataPath = "/Data/MiIncreiblePaseoConfig.dat";
+    const string ConfigDataPath = "/Data/TapGalleryConfig.dat";
 
     [SerializeField, Min(0f)] float fadeDuration = 1f;
     [SerializeField] AudioSource firstSource;
@@ -25,25 +25,34 @@ public class MusicManager : Universal.Singleton<MusicManager>
     AudioSource inactiveSource;
     float currentPitchFadeDuration;
 
+    bool isMuted = false;
+    public bool IsMuted => isMuted;
     public float Volume => configData != null ? configData.musicVolume : 1f;
+    public float EffectiveVolume => isMuted ? 0f : Volume;
 
-    internal override void Awake()
+    void Awake()
     {
-        base.Awake();
+        if (inst && inst != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
 
-        if (inst != this) return;
-        
-        //LoadConfigData();
+        inst = this;
+        DontDestroyOnLoad(gameObject);
+
+        LoadConfigData();
         SetupSources();
     }
 
-    // internal override void OnDestroy()
-    // {
-    //     if (inst == this) 
-    //         SaveConfigData();
-    //     
-    //     base.OnDestroy();
-    // }
+    void OnDestroy()
+    {
+        if (inst == this)
+        {
+            SaveConfigData();
+            inst = null;
+        }
+    }
 
     public void RequestTrack(AudioClip newClip)
     {
@@ -70,6 +79,12 @@ public class MusicManager : Universal.Singleton<MusicManager>
         configData.musicVolume = targetVolume;
         ApplyVolume(previousVolume, targetVolume);
         SaveConfigData();
+    }
+
+    public void SetMuted(bool muted)
+    {
+        isMuted = muted;
+        ApplyVolume(Volume, Volume);
     }
 
     public void SetPitch(float targetPitch, float fadeDuration = 0f)
@@ -143,7 +158,7 @@ public class MusicManager : Universal.Singleton<MusicManager>
         {
             activeSource.Stop();
             activeSource.volume = 0f;
-            inactiveSource.volume = Volume;
+            inactiveSource.volume = EffectiveVolume;
             SwapSources();
             yield break;
         }
@@ -155,15 +170,15 @@ public class MusicManager : Universal.Singleton<MusicManager>
             elapsed += Time.unscaledDeltaTime;
             float t = Mathf.Clamp01(elapsed / fadeDuration);
 
-            activeSource.volume = Mathf.Lerp(Volume, 0f, t);
-            inactiveSource.volume = Mathf.Lerp(0f, Volume, t);
+            activeSource.volume = Mathf.Lerp(EffectiveVolume, 0f, t);
+            inactiveSource.volume = Mathf.Lerp(0f, EffectiveVolume, t);
 
             yield return null;
         }
 
         activeSource.Stop();
         activeSource.volume = 0f;
-        inactiveSource.volume = Volume;
+        inactiveSource.volume = EffectiveVolume;
 
         SwapSources();
         fadeRoutine = null;
@@ -176,11 +191,22 @@ public class MusicManager : Universal.Singleton<MusicManager>
 
     void ApplyVolume(float previousVolume, float targetVolume)
     {
-        if (activeSource && activeSource.isPlaying)
-            activeSource.volume = RemapVolume(activeSource.volume, previousVolume, targetVolume);
+        float target = isMuted ? 0f : targetVolume;
+        if (fadeRoutine == null)
+        {
+            if (activeSource)
+                activeSource.volume = target;
+            if (inactiveSource)
+                inactiveSource.volume = 0f;
+        }
+        else
+        {
+            if (activeSource && activeSource.isPlaying)
+                activeSource.volume = RemapVolume(activeSource.volume, previousVolume, target);
 
-        if (inactiveSource && inactiveSource.isPlaying)
-            inactiveSource.volume = RemapVolume(inactiveSource.volume, previousVolume, targetVolume);
+            if (inactiveSource && inactiveSource.isPlaying)
+                inactiveSource.volume = RemapVolume(inactiveSource.volume, previousVolume, target);
+        }
     }
 
     float RemapVolume(float currentChannelVolume, float previousVolume, float targetVolume)
@@ -200,7 +226,7 @@ public class MusicManager : Universal.Singleton<MusicManager>
             if (File.Exists(path))
                 configData = JsonUtility.FromJson<ConfigData>(File.ReadAllText(path));
         }
-        catch { } //ignored
+        catch { }
 
         if (configData == null)
             configData = new ConfigData();
@@ -213,9 +239,9 @@ public class MusicManager : Universal.Singleton<MusicManager>
         string path = Application.persistentDataPath + ConfigDataPath;
         try
         {
-            Directory.CreateDirectory(Path.GetDirectoryName(path) ?? string.Empty);
+            Directory.CreateDirectory(Path.GetDirectoryName(path));
             File.WriteAllText(path, JsonUtility.ToJson(configData));
         }
-        catch { } // ignored
+        catch { }
     }
 }

@@ -6,7 +6,7 @@ namespace Hackathon.Game
     public class LocationInfoPanel : MonoBehaviour
     {
         [SerializeField] Universal.FadeController fadeController;
-        int hovers = 0;
+        [SerializeField] RectTransform rectTransform;
         
         [SerializeField] Image image;
         [SerializeField] TMPro.TextMeshProUGUI label;
@@ -61,6 +61,29 @@ namespace Hackathon.Game
         public void Disappear()
         {
             fadeController.FadeOut(true);
+        }
+
+        public void SetPositionAndClamp(Vector3 targetWorldPos)
+        {
+            transform.position = targetWorldPos;
+            if (rectTransform == null) return;
+
+            Vector3[] corners = new Vector3[4];
+            rectTransform.GetWorldCorners(corners);
+
+            Vector3 offset = Vector3.zero;
+            float margin = 15f;
+            float minX = margin;
+            float maxX = Screen.width - margin;
+            float minY = margin;
+            float maxY = Screen.height - margin;
+
+            if (corners[0].x < minX) offset.x += (minX - corners[0].x);
+            if (corners[2].x > maxX) offset.x -= (corners[2].x - maxX);
+            if (corners[0].y < minY) offset.y += (minY - corners[0].y);
+            if (corners[2].y > maxY) offset.y -= (corners[2].y - maxY);
+
+            transform.position += offset;
         }
     }
 }

@@ -1,0 +1,245 @@
+/* MainMenu specific stylesheet for 800x600 reference resolution */
+
+.main-menu-root {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Computer device container on the right desk (matching Map Panel) */
+.compu-container {
+    position: absolute;
+    left: 336px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: visible;
+}
+
+/* Computer screen viewport (yellow desktop #FFF3A0) matching Map Holder */
+.compu-screen {
+    position: absolute;
+    left: 3.4%;
+    top: 6.1%;
+    right: 3.1%;
+    bottom: 6.6%;
+    background-color: rgb(255, 243, 160);
+    overflow: hidden;
+}
+
+/* Screen pages inside monitor */
+.screen-page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    align-items: center;
+}
+
+/* Cyan Title Box matching the uGUI original */
+.title-frame {
+    width: 350px;
+    height: 125px;
+    margin-top: 36px;
+    align-self: center;
+    background-image: url("project://database/Assets/_Game/button_square_line.png?fileID=21300000&guid=1e32a606d3caf3743b11b6458d28ddcb&type=3#button_square_line");
+    -unity-slice-left: 9;
+    -unity-slice-top: 9;
+    -unity-slice-right: 9;
+    -unity-slice-bottom: 9;
+    -unity-slice-scale: 1;
+    -unity-background-image-tint-color: rgb(204, 255, 248);
+    background-color: transparent;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+    border-width: 0;
+}
+
+.title-frame-config {
+    height: 70px;
+    margin-top: 24px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+}
+
+/* Title text with exact font and styling */
+.title-text {
+    width: 100%;
+    height: 100%;
+    -unity-font: url("project://database/Assets/_Game/MainMenu/Distillery%20Strong.otf?fileID=12800000&guid=acb32c0eafdc9724b95ce2902a5dde67&type=3#Distillery Strong");
+    -unity-font-definition: url("project://database/Assets/_Game/MainMenu/Distillery%20Strong.otf?fileID=12800000&guid=acb32c0eafdc9724b95ce2902a5dde67&type=3#Distillery Strong");
+    font-size: 38px;
+    -unity-font-style: bold;
+    color: rgb(0, 0, 0);
+    -unity-text-align: middle-left;
+    white-space: normal;
+}
+
+.title-text-config {
+    width: 100%;
+    height: 100%;
+    -unity-font: url("project://database/Assets/_Game/MainMenu/Distillery%20Strong.otf?fileID=12800000&guid=acb32c0eafdc9724b95ce2902a5dde67&type=3#Distillery Strong");
+    -unity-font-definition: url("project://database/Assets/_Game/MainMenu/Distillery%20Strong.otf?fileID=12800000&guid=acb32c0eafdc9724b95ce2902a5dde67&type=3#Distillery Strong");
+    font-size: 30px;
+    -unity-font-style: bold;
+    color: rgb(0, 0, 0);
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+/* Button stack aligned to the right, under bezel */
+.buttons-stack {
+    width: 100%;
+    margin-top: 14px;
+    align-items: flex-end;
+}
+
+/* Settings content within tablet viewport */
+.settings-content {
+    width: 350px;
+    margin-top: 20px;
+    align-items: flex-end;
+}
+
+/* Audio control inline rows */
+.audio-control-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+/* Audio toggle button with hand-drawn icon */
+.audio-toggle-btn {
+    width: 44px;
+    height: 44px;
+    margin-right: 14px;
+    background-color: transparent;
+    border-width: 0;
+    -unity-background-scale-mode: scale-to-fit;
+    transition-property: scale;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+}
+
+.audio-toggle-btn:hover {
+    scale: 1.12 1.12;
+}
+
+.audio-toggle-btn:active {
+    scale: 0.92 0.92;
+}
+
+.icon-music-on {
+    background-image: url("project://database/Assets/_Game/UI/Icons/icon_music_on.png");
+}
+
+.icon-music-off {
+    background-image: url("project://database/Assets/_Game/UI/Icons/icon_music_off.png");
+}
+
+.icon-sfx-on {
+    background-image: url("project://database/Assets/_Game/UI/Icons/icon_sfx_on.png");
+}
+
+.icon-sfx-off {
+    background-image: url("project://database/Assets/_Game/UI/Icons/icon_sfx_off.png");
+}
+
+/* Slider inline next to icon */
+.settings-slider-inline {
+    flex-grow: 1;
+    margin: 0;
+}
+
+/* Menu Button Styles with Tucked Bezel & Left Pop-Out */
+.menu-btn {
+    height: 36px;
+    margin-bottom: 6px;
+    background-image: url("project://database/Assets/_Game/button_square_line.png?fileID=21300000&guid=1e32a606d3caf3743b11b6458d28ddcb&type=3#button_square_line");
+    -unity-slice-left: 9;
+    -unity-slice-top: 9;
+    -unity-slice-right: 9;
+    -unity-slice-bottom: 9;
+    -unity-slice-scale: 1;
+    -unity-background-image-tint-color: rgb(255, 240, 201);
+    background-color: transparent;
+    -unity-font: url("project://database/Assets/_Game/Map/CyGrotesk-KeyRegular.otf?fileID=12800000&guid=7bfa2f5719265c345b314a9886cf4913&type=3#Cy Grotesk Key");
+    -unity-font-definition: url("project://database/Assets/_Game/Map/CyGrotesk-KeyRegular.otf?fileID=12800000&guid=7bfa2f5719265c345b314a9886cf4913&type=3#Cy Grotesk Key");
+    -unity-font-style: bold;
+    color: rgb(0, 0, 0);
+    -unity-text-align: middle-center;
+    align-items: center;
+    justify-content: center;
+    border-width: 0;
+    /* Tucked under the right bezel of the monitor */
+    margin-right: -18px;
+    transition-property: translate, -unity-background-image-tint-color;
+    transition-duration: 0.12s;
+    transition-timing-function: ease-out;
+}
+
+/* Pop out to the left on hover while staying tucked under bezel */
+.menu-btn:hover {
+    translate: -8px 0;
+    -unity-background-image-tint-color: rgb(255, 248, 222);
+}
+
+/* Pressed state */
+.menu-btn:active {
+    translate: -4px 0;
+    -unity-background-image-tint-color: rgb(235, 220, 180);
+}
+
+/* Cascading widths matching the original right-aligned staircase */
+.btn-play {
+    width: 200px;
+    font-size: 21px;
+}
+
+.btn-settings {
+    width: 180px;
+    font-size: 16px;
+}
+
+.btn-credits {
+    width: 155px;
+    font-size: 21px;
+}
+
+.btn-exit {
+    width: 130px;
+    font-size: 21px;
+}
+
+/* Back button in Config: only bounces and scales, no horizontal translate */
+.btn-back {
+    width: 155px;
+    height: 38px;
+    font-size: 20px;
+    margin-top: 14px;
+    margin-right: -18px;
+    transition-property: scale, -unity-background-image-tint-color;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+}
+
+.btn-back:hover {
+    translate: 0 0;
+    scale: 1.06 1.06;
+    -unity-background-image-tint-color: rgb(255, 248, 222);
+}
+
+.btn-back:active {
+    translate: 0 0;
+    scale: 0.94 0.94;
+    -unity-background-image-tint-color: rgb(235, 220, 180);
+}

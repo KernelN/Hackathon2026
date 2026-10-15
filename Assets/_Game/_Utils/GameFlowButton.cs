@@ -19,6 +19,8 @@ namespace Hackathon
         [SerializeField] string sceneName;
         [Tooltip("Only applies to 'Change with Delay'")]
         [SerializeField] float sceneLoadDelay = 1;
+
+
         public void ChangeScene()
         {
             if(Time.timeScale == 0) Time.timeScale = 1;

@@ -9,19 +9,30 @@ namespace Hackathon.Game
         [SerializeField] LocationInfoPanel locationInfoPanel;
         [SerializeField] Transform infoPanelPivot;
         
+        void Awake()
+        {
+            if (locationInfoPanel == null)
+                locationInfoPanel = Object.FindAnyObjectByType<LocationInfoPanel>();
+        }
+
         public void OnPointerEnter(PointerEventData eventData)
         {
-            if(infoPanelPivot)
-                locationInfoPanel.transform.position = infoPanelPivot.position;
-            if(location)
-                locationInfoPanel.Appear(location.SO);
-            //Debug.Log("Pointer entered: " + location.Name);
+            if (locationInfoPanel != null)
+            {
+                if (infoPanelPivot != null)
+                    locationInfoPanel.SetPositionAndClamp(infoPanelPivot.position);
+                else
+                    locationInfoPanel.SetPositionAndClamp(transform.position + new Vector3(0, 50, 0));
+
+                if (location != null)
+                    locationInfoPanel.Appear(location.SO);
+            }
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            //Debug.Log("Pointer exited: " + location.Name);
-            locationInfoPanel.Disappear();
+            if (locationInfoPanel != null)
+                locationInfoPanel.Disappear();
         }
     }
 }

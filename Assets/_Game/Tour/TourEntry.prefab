@@ -115,7 +115,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_ActiveFontFeatures: 6e72656bu
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -234,6 +234,8 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+  m_MaxWidth: -1
+  m_MaxHeight: -1
 --- !u!1 &5151037164898769707
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,6 +386,8 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+  m_MaxWidth: -1
+  m_MaxHeight: -1
 --- !u!114 &4056507402791843892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,6 +478,7 @@ GameObject:
   - component: {fileID: 408121045799097881}
   - component: {fileID: 6540851983256452046}
   - component: {fileID: 4139787055215714303}
+  - component: {fileID: 3320320793076082599}
   m_Layer: 5
   m_Name: Delete Button
   m_TagString: Untagged
@@ -614,6 +619,28 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+  m_MaxWidth: -1
+  m_MaxHeight: -1
+--- !u!114 &3320320793076082599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6803990734572622892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81855aa8c1fa421e9ca8b9cfc7d94180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Hackathon.UI.UIButtonJuice
+  enableHoverScale: 1
+  enablePressScale: 1
+  enableClickPunch: 1
+  hoverScaleMultiplier: 1.05
+  pressScaleMultiplier: 0.94
+  animationSpeed: 16
+  playClickSound: 1
+  playHoverSound: 1
 --- !u!1 &7163482263736803152
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,6 +737,8 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+  m_MaxWidth: -1
+  m_MaxHeight: -1
 --- !u!1 &7932894709942739917
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,3 +835,5 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+  m_MaxWidth: -1
+  m_MaxHeight: -1
